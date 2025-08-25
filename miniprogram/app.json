@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/material/index",
+    "pages/me/index",
+    "components/name-card/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/tabbar/home_inactive.png",
+        "selectedIconPath": "/images/tabbar/home_active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/material/index",
+        "iconPath": "/images/tabbar/home_inactive.png",
+        "selectedIconPath": "/images/tabbar/home_active.png",
+        "text": "素材"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "iconPath": "/images/tabbar/home_inactive.png",
+        "selectedIconPath": "/images/tabbar/home_active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

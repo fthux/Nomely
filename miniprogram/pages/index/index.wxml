@@ -1,0 +1,4 @@
+<navigation-bar><view slot="content">起名</view></navigation-bar>
+<view>
+  <name-card wx:for="{{nameDataList}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" familyName="张" givenName="{{item.name}}" author="{{item.author}}" book="{{item.book}}" dynasty="{{item.dynasty}}" sentence="{{item.sentence}}" title="{{item.title}}"></name-card>
+</view>
