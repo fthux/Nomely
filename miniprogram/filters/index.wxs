@@ -1,9 +1,9 @@
 function formatSentence(name, sentence) {
   // sentence.replace(new RegExp(`[${name}]`, 'ig'), char => `<i>${char}</i>`);
   var rexp = getRegExp('[' + name + ']', 'ig');
-  return sentence.replace(rexp, function(char){
-    return '<span style="font-size: 20px">' + char + '</span>';
-  });
+  return '"' + sentence.replace(rexp, function(char){
+    return '<strong style="color: rgb(20, 184, 166)">' + char + '</strong>';
+  }) + '"';
 };
 
 module.exports = {

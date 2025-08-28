@@ -1,1 +1,29 @@
-/* components/name-card/index.wxss */
+.item {
+  padding: 34rpx 0;
+  border-top: 2rpx solid var(--divider-base-color);
+  .name {
+    font-size: 42rpx;
+    font-weight: 600;
+    line-height: 56rpx;
+    color: rgb(17, 94, 89);
+  }
+  .sentence {
+    margin-top: 14rpx;
+    font-size: 31rpx;
+    line-height: 48rpx;
+    font-style: italic;
+    color: rgb(71, 85, 105);
+  }
+  .source {
+    text-align: right;
+    margin-top: 14rpx;
+    font-size: 24rpx;
+    line-height: 34rpx;
+    color: rgb(100, 116, 139);
+    .label {
+      margin-right: 16rpx;
+    }.label:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,6 +1,9 @@
-import { IArticle } from "../../../interface";
+import { IArticle, IBook } from "../../../interface";
 import rand from "./rand";
 import shijing from '../../data/shijing'
+import books from '../../data/index'
+import { NameDescriptions } from "../../constants";
+import { randomInt } from "../../utils/util";
 
 interface INameData {
   name: string,
@@ -15,24 +18,24 @@ interface INameData {
 Component({
   lifetimes: {
     attached() {
-      const nameDataList: INameData[] = [];
-      for (let i = 0; i < 10; i++) {
-        const nameData = this.genName("诗经", shijing);
-        if (!nameData) {
-          i--;
-          continue;
-        }
-        nameDataList.push(nameData);
-      }
-      this.setData({
-        nameDataList: nameDataList
-      });
+      
     },
   },
   data: {
+    nameDescriptions: NameDescriptions,
     nameDataList: [] as INameData[],
+    familyName: "",
+    books,
+    chosenBook: books[0],
+    isGenerating: false,
   },
   methods: {
+    chooseBook (e: WechatMiniprogram.TouchEvent) {
+      const dataset = e.currentTarget.dataset;
+      this.setData({
+        chosenBook: books.find(item => item.id === dataset.id),
+      });
+    },
     formatStr(str: string): string {
       let res = str.replace(/(\s|　|”|“){1,}|<br>|<p>|<\/p>/g, '');
       res = res.replace(/\(.+\)/g, '');
@@ -58,7 +61,45 @@ Component({
       const badChars = '胸鬼懒禽鸟鸡我邪罪凶丑仇鼠蟋蟀淫秽妹狐鸡鸭蝇悔鱼肉苦犬吠窥血丧饥女搔父母昏狗蟊疾病痛死潦哀痒害蛇牲妇狸鹅穴畜烂兽靡爪氓劫鬣螽毛婚姻匪婆羞辱'.split('');
       return str.split('').filter(char => badChars.indexOf(char) === -1).join('');
     },
-    genName(book: string, articles: IArticle[]) {
+    onInputFamilyName (e: WechatMiniprogram.TouchEvent) {
+      this.setData({
+        familyName: e.detail.value,
+      });
+    },
+    genNames () {
+      if (this.data.familyName.trim() === "") {
+        wx.showToast({
+          title: "请输入您的姓氏",
+          icon: "error",
+        })
+        return;
+      }
+      this.setData({
+        isGenerating: true,
+      });
+      wx.showLoading({
+        title: "生成中...",
+        mask: true,
+      });
+      setTimeout(() => {
+        wx.hideLoading();
+        const nameDataList: INameData[] = [];
+      for (let i = 0; i < 10; i++) {
+        const nameData = this.genName(this.data.chosenBook);
+        if (!nameData) {
+          i--;
+          continue;
+        }
+        nameDataList.push(nameData);
+      }
+      this.setData({
+        isGenerating: false,
+        nameDataList: nameDataList,
+      });
+      }, randomInt(1000, 3000));
+    },
+    genName(book: IBook) {
+      const articles = book.articles;
       const article = rand.choose(articles);
       const { content, title, author, dynasty } = article;
       if (!content) {
@@ -80,7 +121,7 @@ Component({
         content,
         title,
         author,
-        book,
+        book: book.name,
         dynasty,
       };
       return res;

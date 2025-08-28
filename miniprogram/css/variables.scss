@@ -1,68 +1,9 @@
 page {
   /* 基础主题色 */
-  --theme-base-color: #364F9E;
-
-  --href-color: #2d8cf0;
-
+  --primary-color: rgb(20, 184, 166);
   /* 分割线颜色 */
-  /* --divider-base-color: #2c3040; */
-  --divider-base-color: #f4f4f4;
-
-  --padding-normal: 30rpx;
-
-  /* 预设字号 */
-  /* --font-size-small: 28rpx;
-  --font-size-medium: 32rpx;
-  --font-size-big: 40rpx; */
-
-  --title-default-font-size: 32rpx;
-  --title-big-font-size: 40rpx;
-  --content-default-font-size: 28rpx;
-  --content-big-font-size: 32rpx;
-  --annotation-default-font-size: 26rpx;
-
-  /* 字体默认颜色 */
-  /* --font-default-color: #ffffff; */
-  /* 黑色背景色 */
-  /* --page-background-color-base: #0b0f1f; */
-  /* 主页灰色背景色 */
-  /* --page-background-color-grey: #efefef; */
-  /* block background color */
-  /* --block-background-color: #22273a; */
-  /* key 值颜色 */
-  /* --key-default-color: #bbbbbb; */
-  /* 任务树默认颜色 */
-  /* --tree-default-color: #ffffff; */
-  /* 任务树工步颜色 */
-  /* --tree-step-default-color: #999999; */
-  /* 任务树选中背景色 */
-  /* --tree-selected-background-color: #100d0d; */
-
-  --font-default-color: #222;
-  --page-background-color-base: #efefef;
-  --block-background-color: #ffffff;
-  --key-default-color: #666;
-  /* --tree-default-color: #606266; */
-  --tree-default-color: #000;
-  --tree-expand-icon-color: #c0c4cc;
-  /* --tree-step-default-color: #999999; */
-  --tree-step-default-color: #666;
-  --tree-selected-background-color: #f5f7fa;
-
-  /* navigation-bar */
-  --navigation-bar-font-size: var(--font-size-normal);
-  --navigation-bar-background-color: var(--theme-base-color);
-
-  --card-title-font-size: var(--font-size-normal);
-
-  --tree-font-size: var(--font-size-normal);
-
+  --divider-base-color: rgb(229, 231, 235);
   /* footer-no-more */
   --footer-no-more-font-size: 26rpx;
   --footer-no-more-color: #bbbbbb;
-}
-
-.navigation-bar-default-background-color {
-	background-color: var(--theme-base-color);
-	color: #ffffff;
 }

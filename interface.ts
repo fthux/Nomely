@@ -4,4 +4,4 @@ export interface IArticle {
   author: string | null;
   dynasty: string;
 };
-export type IBook = { name: string; articles: IArticle[] };
+export type IBook = { id: string; name: string; description: string; articles: IArticle[] };

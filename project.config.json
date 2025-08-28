@@ -35,5 +35,10 @@
     "ignore": [],
     "include": []
   },
-  "appid": "wx1886e5e27420ca24"
+  "appid": "wx1886e5e27420ca24",
+  "scripts": {
+    "beforeCompile": "npm run tsc",
+    "beforePreview": "npm run tsc",
+    "beforeUpload": "npm run tsc"
+  }
 }

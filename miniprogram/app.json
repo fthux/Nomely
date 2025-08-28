@@ -21,7 +21,7 @@
         "pagePath": "pages/material/index",
         "iconPath": "/images/tabbar/home_inactive.png",
         "selectedIconPath": "/images/tabbar/home_active.png",
-        "text": "素材"
+        "text": "典籍"
       },
       {
         "pagePath": "pages/me/index",

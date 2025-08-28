@@ -13,6 +13,10 @@ export const formatTime = (date: Date) => {
   )
 }
 
+export const randomInt = (min: number, max: number) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 const formatNumber = (n: number) => {
   const s = n.toString()
   return s[1] ? s : '0' + s

@@ -1,2 +1,10 @@
 @import "/css/variables.wxss";
 @import "/icon/iconfont.wxss";
+
+.card {
+  padding: 56rpx;
+  border: 2rpx solid var(--divider-base-color);
+  border-radius: 28rpx;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
+  margin-bottom: 56rpx;
+}
