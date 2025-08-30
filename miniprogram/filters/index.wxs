@@ -6,6 +6,28 @@ function formatSentence(name, sentence) {
   }) + '"';
 };
 
+function formatArticle(content) {
+  if (!content) return "暂无";
+
+  var rexp = getRegExp('\s+', 'ig');
+  content = content.replace(rexp, '');
+   // 移除html标签
+  rexp = getRegExp('<[^>]*>', 'ig');
+  content = content.replace(rexp, '');
+  rexp = getRegExp('\n+', 'ig');
+  content = content.replace(rexp, '\n');
+  // 处理标点后紧跟中文反引号的情况：在反引号后换行
+  rexp = getRegExp('([。！？；：》】])(”)(?!\n)', 'ig');
+  content = content.replace(rexp, '$1$2\n');
+  // 处理普通标点后换行（没有反引号的情况）
+  rexp = getRegExp('([。！？；》】])(?!\n|”|’|」|』|\)|）)', 'ig');
+  content = content.replace(rexp, '$1\n');
+  rexp = getRegExp('\n{3,}', 'ig');
+  return content.replace(rexp, '\n\n');
+
+}
+
 module.exports = {
   formatSentence: formatSentence,
+  formatArticle: formatArticle,
 };

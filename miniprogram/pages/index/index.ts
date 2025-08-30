@@ -15,11 +15,6 @@ interface INameData {
 }
 
 Component({
-  lifetimes: {
-    attached() {
-      
-    },
-  },
   data: {
     nameDescriptions: NameDescriptions,
     nameDataList: [] as INameData[],

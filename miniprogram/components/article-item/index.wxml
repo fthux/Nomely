@@ -1,0 +1,6 @@
+<wxs module='filter' src='../../filters/index.wxs'></wxs>
+<view class="item">
+  <view class="title">{{article.title}}</view>
+  <view class="info"><text class="label">[{{article.dynasty}}]</text><text class="label">{{article.author}}</text></view>
+  <view class="content">{{filter.formatArticle(article.content)}}</view>
+</view>

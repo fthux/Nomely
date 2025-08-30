@@ -8,7 +8,7 @@ Component({
     chooseBook (e: WechatMiniprogram.TouchEvent) {
       const dataset = e.currentTarget.dataset;
       wx.navigateTo({
-        url: `pages/book-detail/index?book-id=${dataset.bookId}`
+        url: `/pages/article-list/index?id=${dataset.bookid}`
       })
     },
   },

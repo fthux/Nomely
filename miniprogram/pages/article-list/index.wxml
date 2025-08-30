@@ -1,0 +1,4 @@
+<navigation-bar isBack="{{true}}"><view slot="content">{{navigationBarTitle}}</view></navigation-bar>
+<view class="container">
+  <article-item wx:for="{{articles}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" icon="back" id="{{item.id}}" article="{{item}}"></article-item>
+</view>

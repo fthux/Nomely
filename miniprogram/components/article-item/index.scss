@@ -1,0 +1,33 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 28rpx;
+  margin-bottom: 28rpx;
+  box-shadow: var(--box-shadow-card);
+  border-radius: 20rpx;
+  border: 2rpx solid rgb(229, 231, 235);
+  text-align: left;;
+  .title {
+    font-weight: 600;
+    font-size: 34rpx;
+    line-height: 48rpx;
+  }
+  .info {
+    line-height: 34rpx;
+    color: rgb(100, 116, 139);
+    margin: 7rpx 0 20rpx;
+    .label {
+      font-size: 24rpx;
+      margin-right: 16rpx;
+    }
+    .label:last-child {
+      margin-right: 0;
+    }
+  }
+  .content {
+    white-space: pre-wrap;
+    font-size: 28rpx;
+    line-height: 45rpx;
+    color: rgb(51, 65, 85);
+  }
+}

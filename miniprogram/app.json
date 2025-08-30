@@ -1,8 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/classics/index",
-    "pages/me/index"
+    "pages/book-list/index",
+    "pages/me/index",
+    "pages/article-list/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -19,7 +20,7 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/classics/index",
+        "pagePath": "pages/book-list/index",
         "iconPath": "/images/tabbar/home_inactive.png",
         "selectedIconPath": "/images/tabbar/home_active.png",
         "text": "典籍"
