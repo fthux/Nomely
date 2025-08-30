@@ -1,15 +1,16 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/material/index",
-    "pages/me/index",
-    "components/name-card/index"
+    "pages/classics/index",
+    "pages/me/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationStyle": "custom"
   },
   "tabBar": {
+    "selectedColor": "rgb(20, 184, 166)",
+    "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -18,7 +19,7 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/material/index",
+        "pagePath": "pages/classics/index",
         "iconPath": "/images/tabbar/home_inactive.png",
         "selectedIconPath": "/images/tabbar/home_active.png",
         "text": "典籍"

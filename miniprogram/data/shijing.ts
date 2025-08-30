@@ -1,6 +1,4 @@
-import { IArticle } from "../../interface";
-
-const articles: IArticle[] = [{
+const articles: INomely.IArticle[] = [{
   "author": "佚名",
   "dynasty": "春秋",
   "content": "<p>关关雎鸠，在河之洲。窈窕淑女，君子好逑。<br>参差荇菜，左右流之。窈窕淑女，寤寐求之。<br>求之不得，寤寐思服。悠哉悠哉，辗转反侧。<br>参差荇菜，左右采之。窈窕淑女，琴瑟友之。<br>参差荇菜，左右芼之。窈窕淑女，钟鼓乐之。</p>",

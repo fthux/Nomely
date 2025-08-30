@@ -9,6 +9,13 @@ page {
 .container {
   padding: 32rpx 32rpx 120rpx 32rpx;
   flex: 1;
+  .card {
+    padding: 56rpx;
+    border: 2rpx solid var(--divider-base-color);
+    border-radius: 28rpx;
+    box-shadow: var(--box-shadow-card);
+    margin-bottom: 56rpx;
+  }
   .form-area .desc {
     padding-bottom: 42rpx;
     border-bottom: 2rpx solid var(--divider-base-color);
@@ -38,23 +45,30 @@ page {
     .form-input:focus {
       border: 2rpx solid var(--primary-color);
     }
-    .classics {
+    .common-family-names {
+      margin-top: 20rpx;
+    }
+    .classics,
+    .common-family-names {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-around;
       gap: 20rpx;
       font-size: 24rpx;
       line-height: 34rpx;
       font-weight: 500;
-      .classic {
+      .classic,
+      .common-family-name {
         padding: 14rpx 28rpx;
         border: 2rpx solid rgb(209, 213, 219);
         background-color: rgba(255, 255, 255, 0.7);
         border-radius: 9999rpx;
       }
-      .classic.active {
+      .classic.active,
+      .common-family-name.active {
         color: #fff;
         border-color: var(--primary-color);
-        background-color: var(--primary-color);
+        background-image: var(--linear-gradient);
       }
     }
   }
@@ -78,7 +92,7 @@ page {
     justify-content: center;
     .dot {
       flex-shrink: 0;
-      background-color: rgb(45, 212, 191);
+      background-image: var(--linear-gradient);
       width: var(--dot-width);
       height: var(--dot-width);
       border-radius: 50%;
@@ -101,11 +115,12 @@ page {
     position: fixed;
     left: 32rpx;
     right: 32rpx;
-    bottom: calc(env(safe-area-inset-bottom) / 2);
+    // bottom: calc(env(safe-area-inset-bottom) / 2);
+    bottom: 30rpx;
     text-align: center;
     height: 80rpx;
     line-height: 80rpx;
-    background-image:linear-gradient(to right, rgb(20, 184, 166), rgb(8, 145, 178));
+    background-image: var(--linear-gradient);
     border-radius: 21rpx;
     font-size: 28rpx;
     font-weight: 600;

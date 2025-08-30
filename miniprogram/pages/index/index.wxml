@@ -1,4 +1,4 @@
-<navigation-bar><view slot="content">诗意之名，始于卷帙</view></navigation-bar>
+<navigation-bar><view slot="content">起名屋</view></navigation-bar>
 <view class="container">
   <view class="form-area card">
     <view class="desc">
@@ -12,7 +12,9 @@
     <view class="form">
       <view class="form-item">
         <view class="form-label">1.您的姓氏</view>
-        <input class="form-input" bindinput="onInputFamilyName" maxlength="2" placeholder="例如：张" placeholder-style="color: rgb(156, 163, 175)" confirm-type="完成" type="text"/>
+        <input value="{{familyName}}" class="form-input" bindinput="onInputFamilyName" maxlength="2" placeholder="例如：张" placeholder-style="color: rgb(156, 163, 175)" confirm-type="完成" type="text"/>
+        <view class='common-family-names'>
+          <view catchtap="chooseCommonFamilyName" class="common-family-name {{familyName === item ? 'active' : ''}}" wx:for="{{commonFamilyNames}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" data-name="{{item}}">{{item}}</view></view>
       </view>
       <view class="form-item">
         <view class="form-label">2.选择灵感来源</view>

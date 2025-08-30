@@ -1,0 +1,7 @@
+<view class="item" hover-class="item-hover">
+  <view class="left">
+    <view class="name">{{bookName}}</view>
+    <view class="description">{{bookDescription}}</view>
+  </view>
+  <image class='arrow' src="/images/icon-arrow-right.png" mode=""/>
+</view>

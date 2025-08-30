@@ -19,8 +19,7 @@
     "showShadowRootInWxmlPanel": false,
     "packNpmRelationList": [],
     "ignoreUploadUnusedFiles": true,
-    "compileHotReLoad": false,
-    "skylineRenderEnable": true
+    "compileHotReLoad": false
   },
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
@@ -35,7 +34,7 @@
     "ignore": [],
     "include": []
   },
-  "appid": "wx1886e5e27420ca24",
+  "appid": "wx7f0d40f5ed14c27d",
   "scripts": {
     "beforeCompile": "npm run tsc",
     "beforePreview": "npm run tsc",

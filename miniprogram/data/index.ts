@@ -1,4 +1,3 @@
-import { IBook } from '../../interface';
 import chuci from './chuci';
 import cifu from './cifu';
 import gushi from './gushi';
@@ -7,7 +6,7 @@ import songci from './songci';
 import tangshi from './tangshi';
 import yuefu from './yuefu';
 
-const books: IBook[] = [
+const books: INomely.IBook[] = [
   {
     id: "shijing",
     name: "诗经",

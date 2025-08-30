@@ -1,6 +1,4 @@
-import { IArticle } from "../../interface";
-
-const articles: IArticle[] = [{
+const articles: INomely.IArticle[] = [{
   "content": "明月几时有，把酒问青天。不知天上宫阙，今夕是何年。我欲乘风归去，又恐琼楼玉宇，高处不胜寒。起舞弄清影，何似在人间？(何似 一作：何时；又恐 一作：惟 / 唯恐)",
   "title": "水调歌头·丙辰中秋",
   "author": "苏轼",

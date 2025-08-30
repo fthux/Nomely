@@ -1,0 +1,6 @@
+<navigation-bar><view slot="content">诗意之名，始于卷帙</view></navigation-bar>
+<view class="container">
+  <classic-card wx:for="{{books}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" icon="back" bookName="{{item.name}}" bookId="{{item.id}}" data-bookId="{{item.id}}" bookDescription="{{item.description}}" catchtap="chooseBook">
+    <text slot="icon" class='evfont ev-back' style='font-size: 40rpx'></text>
+  </classic-card>
+</view>

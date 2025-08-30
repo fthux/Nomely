@@ -1,6 +1,4 @@
-import { IArticle } from "../../interface";
-
-const articles: IArticle[] = [{
+const articles: INomely.IArticle[] = [{
   "content": "寥落古行宫，宫花寂寞红。白头宫女在，闲坐说玄宗。",
   "title": "行宫",
   "author": "元稹",

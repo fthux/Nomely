@@ -1,8 +1,7 @@
-import { IArticle, IBook } from "../../../interface";
+
 import rand from "./rand";
-import shijing from '../../data/shijing'
 import books from '../../data/index'
-import { NameDescriptions } from "../../constants";
+import { NameDescriptions, CommonFamilyNames } from "../../constants";
 import { randomInt } from "../../utils/util";
 
 interface INameData {
@@ -27,9 +26,16 @@ Component({
     familyName: "",
     books,
     chosenBook: books[0],
+    commonFamilyNames: CommonFamilyNames,
     isGenerating: false,
   },
   methods: {
+    chooseCommonFamilyName (e: WechatMiniprogram.TouchEvent) {
+      const dataset = e.currentTarget.dataset;
+      this.setData({
+        familyName: dataset.name,
+      });
+    },
     chooseBook (e: WechatMiniprogram.TouchEvent) {
       const dataset = e.currentTarget.dataset;
       this.setData({
@@ -98,7 +104,7 @@ Component({
       });
       }, randomInt(1000, 3000));
     },
-    genName(book: IBook) {
+    genName(book: INomely.IBook) {
       const articles = book.articles;
       const article = rand.choose(articles);
       const { content, title, author, dynasty } = article;

@@ -1,6 +1,4 @@
-import { IArticle } from "../../interface";
-
-const articles: IArticle[] = [{
+const articles: INomely.IArticle[] = [{
   "content": "太一况，天马下，沾赤汗，沫流赭。志俶傥，精权奇，籋浮云，晻上驰。体容与，迣万里，今安匹，龙为友。",
   "title": "天马二首·其一",
   "author": "刘彻",
