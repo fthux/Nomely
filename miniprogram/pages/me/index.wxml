@@ -1,4 +1,4 @@
-<navigation-bar><view slot="content">我的</view></navigation-bar>
+<navigation-bar><view slot="content">关于</view></navigation-bar>
 <view class="container">
   <view class="card">
     <view class="wrapper">
@@ -6,7 +6,7 @@
       <view class="title">赠子佳名，山高水长</view>
       <view class="desc">一份美名，一生厚礼</view>
       <view class="items">
-        <view class="item" hover-class="item-hover">
+        <view class="item" catchtap="openAboutPage" hover-class="item-hover">
           <view class="left">
             <image class="icon" src="/images/icon-tip.png" mode="aspectFit"/>
             <view class="label">关于</view>

@@ -2,9 +2,7 @@ page {
   display: flex;
   flex-direction: column;
   height: 100%;
-  --dot-width: 14rpx;
   --font-size-description: 28rpx;
-  --line-height-description: 42rpx;
 }
 .container {
   padding: 32rpx 32rpx 120rpx 32rpx;
@@ -78,25 +76,10 @@ page {
     margin-top: 28rpx;
     color: rgb(30, 41, 59);
     font-size: var(--font-size-description);
-    line-height: var(--line-height-description);
+    line-height: 42rpx;
   }
   .form-area .item:first-child {
     margin-top: 0;
-  }
-  .form-area .dot-container {
-    width: var(--dot-width);
-    height: var(--line-height-description);
-    margin-right: 20rpx;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .dot {
-      flex-shrink: 0;
-      background-image: var(--linear-gradient);
-      width: var(--dot-width);
-      height: var(--dot-width);
-      border-radius: 50%;
-    }
   }
   .form-area .text {
     flex: 1;

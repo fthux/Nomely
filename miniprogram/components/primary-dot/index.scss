@@ -1,0 +1,17 @@
+.dot-container {
+  --dot-width: 14rpx;
+  --line-height-description: 42rpx;
+  width: var(--dot-width);
+  height: var(--line-height-description);
+  margin-right: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .dot {
+    flex-shrink: 0;
+    background-image: var(--linear-gradient);
+    width: var(--dot-width);
+    height: var(--dot-width);
+    border-radius: 50%;
+  }
+}

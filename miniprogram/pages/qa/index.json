@@ -1,7 +1,6 @@
 {
   "usingComponents": {
     "navigation-bar": "/components/navigation-bar/navigation-bar",
-    "name-card": "/components/name-card/index",
     "primary-dot": "/components/primary-dot/index"
   }
 }

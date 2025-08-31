@@ -3,9 +3,7 @@
   <view class="form-area card">
     <view class="desc">
       <view class="item" wx:for="{{nameDescriptions}}" wx:for-index="idx" wx:for-item="item" wx:key="idx">
-        <view class="dot-container">
-          <div class="dot"></div>
-        </view>
+        <primary-dot></primary-dot>
         <view class="text">{{item}}</view>
       </view>
     </view>

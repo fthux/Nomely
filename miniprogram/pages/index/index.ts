@@ -82,7 +82,8 @@ Component({
         title: "生成中...",
         mask: true,
       });
-      setTimeout(() => {
+      const timer = setTimeout(() => {
+        clearTimeout(timer);
         wx.hideLoading();
         const nameDataList: INameData[] = [];
       for (let i = 0; i < 10; i++) {
@@ -97,7 +98,7 @@ Component({
         isGenerating: false,
         nameDataList: nameDataList,
       });
-      }, randomInt(1000, 3000));
+      }, randomInt(200, 1000));
     },
     genName(book: INomely.IBook) {
       const articles = book.articles;
