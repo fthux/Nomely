@@ -9,7 +9,7 @@
         <view class="item" catchtap="openAboutPage" hover-class="item-hover">
           <view class="left">
             <image class="icon" src="/images/icon-tip.png" mode="aspectFit"/>
-            <view class="label">关于</view>
+            <view class="label">常见问题</view>
           </view>
           <image class='more' src="/images/icon-arrow-right.png" mode="aspectFit"/>
         </view>
