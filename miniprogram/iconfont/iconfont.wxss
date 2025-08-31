@@ -1,11 +1,11 @@
 @font-face {
   font-family: "iconfont"; /* Project id 5010814 */
-  src: url('iconfont.eot?t=1756656819149'); /* IE9 */
-  src: url('iconfont.eot?t=1756656819149#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAP0AAsAAAAACKgAAAOoAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFQGYACDKgqEMINiATYCJAMUCwwABCAFhGcHWBuMBxEVnBvJfizGtgjaT9BEE+3NBAG1mbMsJATOxGqeq4pC+2pSla+rP9tsbdqlWmMiDFNiu/z0z48J+QthNAD+53J8i6Dx7QCktScPPLA8oANr7EHWyxMIwBrGLi7jFARgUERNFHf9pm0JGNpr7HBiUNGqBYTFYuigAb3QWR1qSbFAR+CoO1JFLEADZbZyBZjvvl98pkTooKBJtLVa9i/vy4l3zb5MkZbPAvkEq78S2FoBNEACeTMziMHltr5IP5aHxMhbT6UyoKOjwLtm7+Z+meLzQXSyYFUyXbeBsp4/ngThQCv0A6A21KjsGd8kocC7uSQEfJlMQoUvU+ScMKa1NwAXsBe4hYg0mdD3cxSGhgYFRQQE+U2peq99+02erLZtN8DKo6apWFbb9duFsJebpncpxPeVpve4sKd4s/uFb7Sy+m7wHLNzB/TfZB8f5snpH7GJs2z2Hs3cp99G68iEAM8NVOumGei9LTT71kRriRHgWRZIlifNS+mAbRusjShbtVau9a5fXUPX1y9H4h9126vWtSWaNSsKRLLMEO9oejfbm2qMli2a1Hp6tEW9MbXHbF78/fKdTC3xU1KFFTEpMYdG/Yq6bT4xG5qR2zEp0YfRL7KiQvL/5FSCT0+NSTl8uENKadDRgykV3KXBi+YtXxFc2obXUzKf+eXzkAx3xp708owh6e3S92S0FaWBzk3OIfoq5x59pT7EuVGf/mVIYHmCOzCdaSzQw3TLqNy/Ysuhge5Ed+BQw7UgdIHLtddLWKGWy0hEVu15HOhuwrPrMxEA3xr5S052GbZMlNMYs2S6nJGYKR/J6T/Ad2i+937FHoHV/+qmCsCbR+ml0OuzVerzXyBf4r1uedealKrMQXI1r9y0IJDt9ORdRhTA0F3gg64QnvWjCK1dCAKd0BAUnMSCRCcFUYkc0DApAQc6NcAgl/LxJqGMRCJUF5DBLACCIDaCQgAHQRLEeUQl7oNGBO/BQRD/wKC98J/NhJAh5JW0YK2g/4OXOBpDyS7dl7ZzEpQV/mmaPAxCU9bJ5FOPmrroMy22ZTZgCAd40PV0SgiZMGjJpWPOXVWZvKeUEofdlbRgrYD+D3iJo7GpOf55L23nJKgm8rPQhLmIPtBQUtdAnrKxVsWZ1J8W28JscDtDOAAP2aKTHkMg5zcLWnKJaxHJHRWiMnVl5fiK4QLXAAbaizShCClUoQkHfgNx0IXxKfnRXgQRrgV56/gcNuqFjCeJ+b/bAQ==') format('woff2'),
-       url('iconfont.woff?t=1756656819149') format('woff'),
-       url('iconfont.ttf?t=1756656819149') format('truetype'),
-       url('iconfont.svg?t=1756656819149#iconfont') format('svg');
+  src: url('iconfont.eot?t=1756657978346'); /* IE9 */
+  src: url('iconfont.eot?t=1756657978346#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAS8AAsAAAAACcgAAARwAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFQGYACDQAqGLIU+ATYCJAMYCw4ABCAFhGcHXxuJCFGULkqR7GeB45owneDExpZkl2TekTqF9lz1+h5ePNzj4f/H3H3fhktT7WJRE5lE2iGtFBK0SupkfCgvm2zWUwJJe0JwoFczd05KfCE9T/Kr2pya2l/j+CMB0glLf0y0sevIjuMhn6Iu9hiuGPifS+Ws57HTjG8HAJlz44FlDaAAjdW9rFu4r2RV6zB2cRkvERhwIIXk6u7lHS67RgtckdLagzA3usEbOGbVSgk59Mla3ROLeAMy0ovkGgCv7s/HH5jHMUnNtMvcP9028PNh/jcN+T2DgPwB7DYBbk6oyNiZmTZ65eZne354B2kgL7jvAsin90nS5/wPuZ+7b5qZGQD+BH9t0gG9lCwJVfrnRaOJhyDpWlntHcdEyXzmoiR+dqAE/ydQKv8a7k2Stx6rR4hK3GH5Tv/i0C/UDra3JlR2oZaWZmY2JmZGGoG5d89AEHv/PiLyDx8imHvwwHhM4Gwl5hNKkc1XIqbK96xRo1FxHI8JI8v58qqyOiuqpKKy0ZapaIQwtr7ZoaxJk/CA45oEP4ZpAFA5CqEEWVvr2wkCl0MolgKIP5aE4jiBNaL/ZutG5LepQRjDgVu3NOHx3ULAFpsmztgsjmY+ZnMjGjlqItwCBd2GpuJdQobvHEMlahOhLBCWJw2l4AubG1AjSt1HlbVifXUN9SajHKFx1IGr6hiirKko4MtitXghKDbjJjdyx6YVPpzXuXNenM+KSwbDYQSMaPcVPpdyFssz0Z41MSujo1fGrHlmMBxGwIhiP+PTdtNpjlSM/v0bkOu4aul0ZmH7u4lS9Nq11yPXUv4/5pi5ZIJkIRfOTX0+ujDzYNrB5uKfV+/5yly/uEVXOHg4DO3/Y3cXPoOzzOBdBw/74fhfpCLafdrdE5j/ax08hod5j0iz0UGPaCrSvCivvMI8cil4q8l8zW9fd/pQPj3etM9Ob9a7x4chIk0VTYqdyipFj7JSuVPRqNR/22lKu1Cm6WR1gdJKidSVD49ZtMuUcqVMd6lVBZYFKlWvF0WWSKVOBKt6nppSTdj2cqAFAACYKftC7nApNX/yCQp2JXWUU96kIXryCan/8zah5wOataZJ/5XwMo+8e+I/hFwzWHYB9dl/joTE/s8kq2piFtlDK3mtzSqB5vG9WBP/U8OvZZ/woi/pZO1sQp/JEJKORcj6LOEKaQuqQUfQ9DmGAdvo0wdN2mdPlH6sOQUgjGmEZMQ7ZGMu4grpIVQzPkIzZgoGPMTFxQathb0WMkoNLncYLBdnyNSd95X8KhnJCnyS9AH6cBYSlozdUyHp4pB+7eeqDp1wxjt6O0qJsQp3ZHXcqtbFJHRL3quMLWe4JoihSANtsIO2s1jhbGyN/75XxFtJDKmJ+zSKHrPQ/ChciLAauHtxqdVyJssPWvPmDlEOb9tCsAxlyUaS9DBD+/LXdYilxra1CFYLoQhrS13xeHxpvsQzMEB72xYpcpSo0aKj9ELtz1vONHIhpVD8mRHhzUiCb/U0XLU0Nu5brjsA') format('woff2'),
+       url('iconfont.woff?t=1756657978346') format('woff'),
+       url('iconfont.ttf?t=1756657978346') format('truetype'),
+       url('iconfont.svg?t=1756657978346#iconfont') format('svg');
 }
 
 .iconfont {
@@ -14,6 +14,10 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-nomely-tips:before {
+  content: "\e96a";
 }
 
 .icon-nomely-home-filling:before {

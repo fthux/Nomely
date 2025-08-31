@@ -1,7 +1,9 @@
 <wxs module='filter' src='../../filters/index.wxs'></wxs>
 <view class="item">
-  <view class="name">{{familyName}}{{givenName}}</view>
-  <!-- <view>「{{filter.formatSentence(givenName, sentence)}}」</view> -->
+  <view class="name">
+    <view>{{familyName}}{{givenName}}</view>
+    <text data-name="{{familyName}}{{givenName}}" catchtap="copyName" class="copy iconfont icon-nomely-copy"></text>
+  </view>
   <rich-text class="sentence" nodes="{{filter.formatSentence(givenName, sentence)}}"></rich-text>
   <view class="source"><text class="label">[{{dynasty}}]</text><text class="label">{{author}}</text><text class="label">《{{title}}》</text></view>
 </view>

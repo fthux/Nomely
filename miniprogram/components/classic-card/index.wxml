@@ -3,5 +3,5 @@
     <view class="name">{{bookName}}</view>
     <view class="description">{{bookDescription}}</view>
   </view>
-  <image class='arrow' src="/images/icon-arrow-right.png" mode=""/>
+  <text class="arrow iconfont icon-nomely-arrow-right"></text>
 </view>

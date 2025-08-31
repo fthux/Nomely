@@ -58,13 +58,13 @@ page {
             align-items: center;
           }
           .icon {
-            width: 32rpx;
-            height: 32rpx;
+            font-size: 36rpx;
+            color: var(--primary-color);
             margin-right: 20rpx;
           }
           .more {
-            width: 34rpx;
-            height: 34rpx;
+            font-size: 24rpx;
+            color: rgb(148, 163, 184);
           }
         }
       }

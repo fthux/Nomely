@@ -45,7 +45,7 @@ Page({
           articles: this.data.rawArticles.slice(0, currentArticleIndex),
         });
       }
-    }, randomInt(200, 1000));
+    }, randomInt(100, 500));
   },
   onReachBottom () {
     this.fetchMoreArticles();

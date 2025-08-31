@@ -2,10 +2,19 @@
   padding: 34rpx 0;
   border-top: 2rpx solid var(--divider-base-color);
   .name {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
     font-size: 42rpx;
     font-weight: 600;
     line-height: 56rpx;
     color: rgb(17, 94, 89);
+    .copy {
+      display: inline-block;
+      font-size: 32rpx;
+      margin-left: 10rpx;
+      color: rgb(200, 202, 204);
+    }
   }
   .sentence {
     margin-top: 14rpx;

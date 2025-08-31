@@ -98,7 +98,7 @@ Component({
         isGenerating: false,
         nameDataList: nameDataList,
       });
-      }, randomInt(200, 1000));
+      }, randomInt(100, 500));
     },
     genName(book: INomely.IBook) {
       const articles = book.articles;

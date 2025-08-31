@@ -8,10 +8,10 @@
       <view class="items">
         <view class="item" catchtap="openAboutPage" hover-class="item-hover">
           <view class="left">
-            <image class="icon" src="/images/icon-tip.png" mode="aspectFit"/>
+            <text class="icon iconfont icon-nomely-tips"></text>
             <view class="label">常见问题</view>
           </view>
-          <image class='more' src="/images/icon-arrow-right.png" mode="aspectFit"/>
+          <text class="more iconfont icon-nomely-arrow-right"></text>
         </view>
       </view>
     </view>
