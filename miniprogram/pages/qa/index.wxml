@@ -4,7 +4,7 @@
     <primary-dot></primary-dot>
     <view class="content">
       <view class="question">{{item.question}}</view>
-      <view class="answer">{{item.anwser}}</view>
+      <view class="answer">{{item.answer}}</view>
     </view>
   </view>
 </view>

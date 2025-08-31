@@ -8,6 +8,6 @@ declare namespace INomely {
   type IBook = { id: string; name: string; description: string; articles: IArticle[] }
   interface IQuestionAndAnswer {
     question: string;
-    anwser: string;
+    answer: string;
   }
 }
