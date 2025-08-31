@@ -6,7 +6,7 @@ const articles: INomely.IArticle[] = [{
 }, {
   "author": "佚名",
   "dynasty": "春秋",
-  "content": "<p>肃肃兔罝，椓之丁丁。赳赳武夫，公侯干城。</p>",
+  "content": "肃肃兔罝，椓之丁丁。赳赳武夫，公侯干城。",
   "title": "兔罝"
 }, {
   "author": "佚名",

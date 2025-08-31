@@ -1,4 +1,5 @@
 <navigation-bar isBack="{{true}}"><view slot="content">{{navigationBarTitle}}</view></navigation-bar>
 <view class="container">
   <article-item wx:for="{{articles}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" icon="back" id="{{item.id}}" article="{{item}}"></article-item>
+  <view class="load-more">{{this.data.currentArticleIndex + 1 >= this.data.rawArticles.length ? "全部加载完成" : (isFetchingMore ? "正在加载更多..." : "下拉加载更多")}}</view>
 </view>

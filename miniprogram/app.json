@@ -15,21 +15,15 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "/images/tabbar/home_inactive.png",
-        "selectedIconPath": "/images/tabbar/home_active.png",
-        "text": "首页"
+        "iconPath": "/images/tabbar/tab_name_inactive.png",
+        "selectedIconPath": "/images/tabbar/tab_name_active.png",
+        "text": "起名"
       },
       {
         "pagePath": "pages/book-list/index",
-        "iconPath": "/images/tabbar/home_inactive.png",
-        "selectedIconPath": "/images/tabbar/home_active.png",
+        "iconPath": "/images/tabbar/tab_book_inactive.png",
+        "selectedIconPath": "/images/tabbar/tab_book_active.png",
         "text": "典籍"
-      },
-      {
-        "pagePath": "pages/me/index",
-        "iconPath": "/images/tabbar/home_inactive.png",
-        "selectedIconPath": "/images/tabbar/home_active.png",
-        "text": "我的"
       }
     ]
   },

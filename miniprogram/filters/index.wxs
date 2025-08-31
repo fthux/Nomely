@@ -15,16 +15,26 @@ function formatArticle(content) {
   rexp = getRegExp('<[^>]*>', 'ig');
   content = content.replace(rexp, '');
   rexp = getRegExp('\n+', 'ig');
-  content = content.replace(rexp, '\n');
-  // 处理标点后紧跟中文反引号的情况：在反引号后换行
-  rexp = getRegExp('([。！？；：》】])(”)(?!\n)', 'ig');
-  content = content.replace(rexp, '$1$2\n');
-  // 处理普通标点后换行（没有反引号的情况）
-  rexp = getRegExp('([。！？；》】])(?!\n|”|’|」|』|\)|）)', 'ig');
-  content = content.replace(rexp, '$1\n');
-  rexp = getRegExp('\n{3,}', 'ig');
-  return content.replace(rexp, '\n\n');
-
+  content = content.replace(rexp, '');
+  // 匹配两种情况：
+  // 1. ([。！？；：》】])(”)(?=\S) : 标点 + 引号，且后面跟非空白字符（确保不是结尾）
+  // 2. ([。！？；》】])(?!”|’|」|』|\)|）)(?=\S) : 标点，且后面不是引号或括号，且后面跟非空白字符
+  // 使用 (?:) 表示非捕获组，提高效率
+  // rexp = getRegExp("([。！？；：》】])(”)(?=\\S)|([。！？；》】])(?!”|’|」|』|\\)|）)(?=\\S)", 'ig');
+  rexp = getRegExp('([。！？；：》】])(”)(?=\\S)|([。！？；》】])(?![”’」』\\)）])(?=\\S)', 'ig');
+  content = content.replace(rexp, function(match, p1, p2, p3) {
+    // 如果匹配到的是第一种情况 (p1 和 p2 有值)
+    if (p1 !== undefined && p2 !== undefined) {
+      return p1 + p2 + '\n';
+    }
+    // 如果匹配到的是第二种情况 (p3 有值)
+    else if (p3 !== undefined) {
+      return p3 + '\n';
+    }
+    // 理论上不会执行到这里
+    return match;
+  });
+  return content;
 }
 
 module.exports = {

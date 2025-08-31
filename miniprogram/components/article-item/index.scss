@@ -24,10 +24,31 @@
       margin-right: 0;
     }
   }
+  .detail {
+    position: relative;
+    .mask {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+      background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0));
+      height: 56rpx;
+    }
+  }
   .content {
     white-space: pre-wrap;
     font-size: 28rpx;
     line-height: 45rpx;
     color: rgb(51, 65, 85);
+    overflow: hidden;
+  }
+  .read-more {
+    color: var(--primary-color);
+    font-size: 24rpx;
+    font-weight: 600;
+    line-height: 34rpx;
+    margin-top: 14rpx;
   }
 }
