@@ -1,0 +1,73 @@
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 32rpx;
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 56rpx;
+    border: 2rpx solid var(--divider-base-color);
+    border-radius: 28rpx;
+    box-shadow: var(--box-shadow-card);
+    .wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .book-icon {
+        width: 140rpx;
+        height: 140rpx;
+        margin: 0 auto 48rpx;
+      }
+      .title {
+        font-size: 34rpx;
+        font-weight: 600;
+        line-height: 48rpx;
+        color: rgb(30, 41, 59);
+      }
+      .desc {
+        font-size: 24rpx;
+        line-height: 34rpx;
+        margin-top: 14rpx;
+        color: rgb(100, 116, 139);
+      }
+      .items {
+        width: 100%;
+        margin-top: 56rpx;
+        .item {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 28rpx;
+          border: 2rpx solid var(--divider-base-color);
+          border-radius: 20rpx;
+          font-size: 28rpx;
+          font-weight: 500;
+          color: rgb(30, 41, 59);
+          .left {
+            display: flex;
+            align-items: center;
+          }
+          .icon {
+            width: 32rpx;
+            height: 32rpx;
+            margin-right: 20rpx;
+          }
+          .more {
+            width: 34rpx;
+            height: 34rpx;
+          }
+        }
+      }
+    }
+  }
+}

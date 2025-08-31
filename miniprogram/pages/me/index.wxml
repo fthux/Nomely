@@ -1,1 +1,19 @@
 <navigation-bar><view slot="content">我的</view></navigation-bar>
+<view class="container">
+  <view class="card">
+    <view class="wrapper">
+      <image class='book-icon' src="/images/icon_book.png" mode="aspectFit"/>
+      <view class="title">赠子佳名，山高水长</view>
+      <view class="desc">一份美名，一生厚礼</view>
+      <view class="items">
+        <view class="item" hover-class="item-hover">
+          <view class="left">
+            <image class="icon" src="/images/icon-tip.png" mode="aspectFit"/>
+            <view class="label">关于</view>
+          </view>
+          <image class='more' src="/images/icon-arrow-right.png" mode="aspectFit"/>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
