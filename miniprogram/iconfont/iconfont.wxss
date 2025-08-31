@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 5010814 */
+  src: url('iconfont.eot?t=1756656819149'); /* IE9 */
+  src: url('iconfont.eot?t=1756656819149#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAP0AAsAAAAACKgAAAOoAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFQGYACDKgqEMINiATYCJAMUCwwABCAFhGcHWBuMBxEVnBvJfizGtgjaT9BEE+3NBAG1mbMsJATOxGqeq4pC+2pSla+rP9tsbdqlWmMiDFNiu/z0z48J+QthNAD+53J8i6Dx7QCktScPPLA8oANr7EHWyxMIwBrGLi7jFARgUERNFHf9pm0JGNpr7HBiUNGqBYTFYuigAb3QWR1qSbFAR+CoO1JFLEADZbZyBZjvvl98pkTooKBJtLVa9i/vy4l3zb5MkZbPAvkEq78S2FoBNEACeTMziMHltr5IP5aHxMhbT6UyoKOjwLtm7+Z+meLzQXSyYFUyXbeBsp4/ngThQCv0A6A21KjsGd8kocC7uSQEfJlMQoUvU+ScMKa1NwAXsBe4hYg0mdD3cxSGhgYFRQQE+U2peq99+02erLZtN8DKo6apWFbb9duFsJebpncpxPeVpve4sKd4s/uFb7Sy+m7wHLNzB/TfZB8f5snpH7GJs2z2Hs3cp99G68iEAM8NVOumGei9LTT71kRriRHgWRZIlifNS+mAbRusjShbtVau9a5fXUPX1y9H4h9126vWtSWaNSsKRLLMEO9oejfbm2qMli2a1Hp6tEW9MbXHbF78/fKdTC3xU1KFFTEpMYdG/Yq6bT4xG5qR2zEp0YfRL7KiQvL/5FSCT0+NSTl8uENKadDRgykV3KXBi+YtXxFc2obXUzKf+eXzkAx3xp708owh6e3S92S0FaWBzk3OIfoq5x59pT7EuVGf/mVIYHmCOzCdaSzQw3TLqNy/Ysuhge5Ed+BQw7UgdIHLtddLWKGWy0hEVu15HOhuwrPrMxEA3xr5S052GbZMlNMYs2S6nJGYKR/J6T/Ad2i+937FHoHV/+qmCsCbR+ml0OuzVerzXyBf4r1uedealKrMQXI1r9y0IJDt9ORdRhTA0F3gg64QnvWjCK1dCAKd0BAUnMSCRCcFUYkc0DApAQc6NcAgl/LxJqGMRCJUF5DBLACCIDaCQgAHQRLEeUQl7oNGBO/BQRD/wKC98J/NhJAh5JW0YK2g/4OXOBpDyS7dl7ZzEpQV/mmaPAxCU9bJ5FOPmrroMy22ZTZgCAd40PV0SgiZMGjJpWPOXVWZvKeUEofdlbRgrYD+D3iJo7GpOf55L23nJKgm8rPQhLmIPtBQUtdAnrKxVsWZ1J8W28JscDtDOAAP2aKTHkMg5zcLWnKJaxHJHRWiMnVl5fiK4QLXAAbaizShCClUoQkHfgNx0IXxKfnRXgQRrgV56/gcNuqFjCeJ+b/bAQ==') format('woff2'),
+       url('iconfont.woff?t=1756656819149') format('woff'),
+       url('iconfont.ttf?t=1756656819149') format('truetype'),
+       url('iconfont.svg?t=1756656819149#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-nomely-home-filling:before {
+  content: "\e68d";
+}
+
+.icon-nomely-arrow-right:before {
+  content: "\e64d";
+}
+
+.icon-nomely-arrow-back:before {
+  content: "\ec7b";
+}
+
+.icon-nomely-copy:before {
+  content: "\ec7a";
+}
+
