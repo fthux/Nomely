@@ -42,9 +42,13 @@ page {
     }
     .excluded-desc {
       margin-bottom: 20rpx;
+      line-height: 38rpx;
     }
     .excluded-words-all {
       margin-top: 20rpx;
+      background-color: rgb(241, 245, 249);
+      border-radius: 10rpx;
+      padding: 14rpx;
     }
     .form-input {
       padding: 0 28rpx;

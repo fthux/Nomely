@@ -1,4 +1,3 @@
-import articles from "../../data/chuci";
 import books from "../../data/index";
 import { randomInt } from "../../utils/util";
 

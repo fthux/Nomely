@@ -10,4 +10,16 @@ declare namespace INomely {
     question: string;
     answer: string;
   }
+  interface IUserData {
+    excludedWords: string;
+  }
+  interface INameData {
+    name: string,
+    sentence: string,
+    content: string,
+    title: string,
+    author: string,
+    book: string,
+    dynasty: string,
+  }
 }

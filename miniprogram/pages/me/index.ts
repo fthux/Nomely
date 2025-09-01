@@ -1,11 +1,9 @@
-Component({
+Page({
   data: {
   },
-  methods: {
-    openAboutPage (e: WechatMiniprogram.TouchEvent) {
-      wx.navigateTo({
-        url: `/pages/qa/index`
-      })
-    },
+  openAboutPage (e: WechatMiniprogram.TouchEvent) {
+    wx.navigateTo({
+      url: `/pages/qa/index`
+    })
   },
 })

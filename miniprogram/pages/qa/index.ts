@@ -1,8 +1,7 @@
 import { QuestionAndAnswers } from "../../constants";
 
-Component({
+Page({
   data: {
     questionAndAnswers: QuestionAndAnswers,
   },
-  methods: {}
 })

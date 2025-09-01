@@ -1,15 +1,13 @@
 import books from "../../data/index";
 
-Component({
+Page({
   data: {
     books,
   },
-  methods: {
-    chooseBook (e: WechatMiniprogram.TouchEvent) {
-      const dataset = e.currentTarget.dataset;
-      wx.navigateTo({
-        url: `/pages/article-list/index?id=${dataset.bookid}`
-      })
-    },
+  chooseBook(e: WechatMiniprogram.TouchEvent) {
+    const dataset = e.currentTarget.dataset;
+    wx.navigateTo({
+      url: `/pages/article-list/index?id=${dataset.bookid}`
+    })
   },
 })
