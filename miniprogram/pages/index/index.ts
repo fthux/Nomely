@@ -90,20 +90,20 @@ Page({
     if (this.data.familyName.trim() === "") {
       wx.showToast({
         title: "请输入您的姓氏",
-        icon: "error",
+        icon: "none",
       })
       return;
     }
     this.setData({
       isGenerating: true,
     });
-    wx.showLoading({
-      title: "生成中...",
-      mask: true,
-    });
+    // wx.showLoading({
+    //   title: "生成中...",
+    //   mask: true,
+    // });
     const timer = setTimeout(() => {
       clearTimeout(timer);
-      wx.hideLoading();
+      // wx.hideLoading();
       const nameDataList: INomely.INameData[] = [];
       for (let i = 0; i < 10; i++) {
         const nameData = this.genName(this.data.chosenBook);
