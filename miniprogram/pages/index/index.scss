@@ -31,7 +31,20 @@ page {
       margin-top: 0;
     }
     .form-label {
+      margin-bottom: 14rpx;
+    }
+    .mark,
+    .excluded-desc,
+    .excluded-words-all {
+      color: rgb(100, 116, 139);
+      font-size: 24rpx;
+      line-height: 34rpx;
+    }
+    .excluded-desc {
       margin-bottom: 20rpx;
+    }
+    .excluded-words-all {
+      margin-top: 20rpx;
     }
     .form-input {
       padding: 0 28rpx;

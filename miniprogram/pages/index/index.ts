@@ -2,7 +2,7 @@
 import rand from "./rand";
 import books from '../../data/index'
 import { NameDescriptions, CommonFamilyNames } from "../../constants";
-import { randomInt } from "../../utils/util";
+import { randomInt, removeDuplicateChars, removeNonChineseAndWhitespace } from "../../utils/util";
 
 interface INameData {
   name: string,
@@ -23,6 +23,8 @@ Component({
     chosenBook: books[0],
     commonFamilyNames: CommonFamilyNames,
     isGenerating: false,
+    excludedWordsInput: "",
+    excludedWordsAll: "",
   },
   methods: {
     chooseCommonFamilyName (e: WechatMiniprogram.TouchEvent) {
@@ -59,12 +61,30 @@ Component({
       return str.replace(puncReg, '');
     },
     cleanBadChar(str: string): string {
-      const badChars = '胸鬼懒禽鸟鸡我邪罪凶丑仇鼠蟋蟀淫秽妹狐鸡鸭蝇悔鱼肉苦犬吠窥血丧饥女搔父母昏狗蟊疾病痛死潦哀痒害蛇牲妇狸鹅穴畜烂兽靡爪氓劫鬣螽毛婚姻匪婆羞辱'.split('');
+      // const badChars = '胸鬼懒禽鸟鸡我邪罪凶丑仇鼠蟋蟀淫秽妹狐鸡鸭蝇悔鱼肉苦犬吠窥血丧饥女搔父母昏狗蟊疾病痛死潦哀痒害蛇牲妇狸鹅穴畜烂兽靡爪氓劫鬣螽毛婚姻匪婆羞辱'.split('');
+      const badChars = this.data.excludedWordsAll.split('');
       return str.split('').filter(char => badChars.indexOf(char) === -1).join('');
     },
     onInputFamilyName (e: WechatMiniprogram.TouchEvent) {
       this.setData({
-        familyName: e.detail.value,
+        familyName: removeNonChineseAndWhitespace(e.detail.value),
+      });
+    },
+    onInputExcludedWords (e: WechatMiniprogram.TouchEvent) {
+      const words = removeDuplicateChars(removeNonChineseAndWhitespace(e.detail.value));
+      this.setData({
+        excludedWordsAll: words,
+        excludedWordsInput: words,
+      });
+    },
+    onFocusExcludedWords () {
+      this.setData({
+        excludedWordsInput: this.data.excludedWordsAll,
+      });
+    },
+    onBlurExcludedWords () {
+      this.setData({
+        excludedWordsInput: this.data.excludedWordsAll.length >= 10 ? `${this.data.excludedWordsAll.slice(0, 10)}...` : this.data.excludedWordsAll,
       });
     },
     genNames () {

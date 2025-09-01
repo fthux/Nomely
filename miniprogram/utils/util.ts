@@ -21,3 +21,14 @@ const formatNumber = (n: number) => {
   const s = n.toString()
   return s[1] ? s : '0' + s
 }
+// 移除重复字符
+export const removeDuplicateChars = (str: string) => {
+  return str
+    .split('')
+    .filter((char, index, array) => array.indexOf(char) === index)
+    .join('');
+};
+// 同时替换非中文字符和空白符
+export const removeNonChineseAndWhitespace = (str: string) => {
+  return str.replace(/[^\u4e00-\u9fa5]|\s/g, '');
+};

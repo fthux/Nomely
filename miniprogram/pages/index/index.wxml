@@ -9,16 +9,22 @@
     </view>
     <view class="form">
       <view class="form-item">
-        <view class="form-label">1.您的姓氏</view>
+        <view class="form-label">1. 您的姓氏</view>
         <input value="{{familyName}}" class="form-input" bindinput="onInputFamilyName" maxlength="2" placeholder="例如：张" placeholder-style="color: rgb(156, 163, 175)" confirm-type="完成" type="text"/>
         <view class='common-family-names'>
           <view catchtap="chooseCommonFamilyName" class="common-family-name {{familyName === item ? 'active' : ''}}" wx:for="{{commonFamilyNames}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" data-name="{{item}}">{{item}}</view></view>
       </view>
       <view class="form-item">
-        <view class="form-label">2.选择灵感来源</view>
+        <view class="form-label">2. 选择灵感来源</view>
         <view class="classics">
           <view catchtap="chooseBook" class="classic {{chosenBook.id === item.id ? 'active' : ''}}" wx:for="{{books}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" data-id="{{item.id}}" data-name="{{item.name}}">{{item.name}}</view>
         </view>
+      </view>
+      <view class="form-item">
+        <view class="form-label">3. 排除字<text class="mark">（选填）</text></view>
+        <view class="excluded-desc">输入不希望出现在名字中的汉字，无需分隔符。</view>
+        <input value="{{excludedWordsInput}}" class="form-input" bindfocus="onFocusExcludedWords" bindblur="onBlurExcludedWords" bindinput="onInputExcludedWords" maxlength="1000" placeholder="例如：吃藕" placeholder-style="color: rgb(156, 163, 175)" confirm-type="完成" type="text"/>
+        <view wx:if="{{excludedWordsAll}}" class="excluded-words-all">排除字：{{excludedWordsAll}}</view>
       </view>
     </view>
   </view>
