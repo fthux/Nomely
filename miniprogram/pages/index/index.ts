@@ -5,6 +5,16 @@ import { NameDescriptions, CommonFamilyNames } from "../../constants";
 import { randomInt, removeDuplicateChars, removeNonChineseAndWhitespace } from "../../utils/util";
 import { UserDataMgr } from "../../utils/user-data-mgr";
 const DefaultExcludedWords = "胸鬼懒禽鸟鸡我邪罪凶丑仇鼠蟋蟀淫秽妹狐鸡鸭蝇悔鱼肉苦犬吠窥血丧饥女搔父母昏狗蟊疾病痛死潦哀痒害蛇牲妇狸鹅穴畜烂兽靡爪氓劫鬣螽毛婚姻匪婆羞辱";
+const ShareButtonTexts = [
+  "大数据没骗我，这个名字绝了：「$」！",
+  "念诗三百首，才勉强选中「$」。",
+  "起名不卷了，我家宝宝就叫「$」！",
+];
+const ShareMenuTexts = [
+  "大数据没骗我，这个名字绝了！",
+  "念诗三百首，才勉强选中。",
+  "起名不卷了，我家宝宝就叫这个了！",
+];
 
 Page({
   data: {
@@ -186,5 +196,18 @@ Page({
       }
     }
     return first <= second ? `${arr[first]}${arr[second]}` : `${arr[second]}${arr[first]}`;
+  },
+  onShareAppMessage(res: WechatMiniprogram.Page.IShareAppMessageOption) {
+    if (res.from === "button") {
+      return {
+        title: ShareButtonTexts[randomInt(0, ShareButtonTexts.length-1)].replace("$",res.target?.dataset?.name),
+        path: '/pages/index/index',
+      }
+    } else {
+      return {
+        title: ShareMenuTexts[randomInt(0, ShareMenuTexts.length-1)].replace("$",res.target?.dataset?.name),
+        path: '/pages/index/index',
+      }
+    }
   },
 });

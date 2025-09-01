@@ -2,8 +2,17 @@
 <view class="item">
   <view class="name">
     <view>{{familyName}}{{givenName}}</view>
-    <text data-name="{{familyName}}{{givenName}}" catchtap="copyName" class="copy iconfont icon-nomely-copy"></text>
+    <!-- <text data-name="{{familyName}}{{givenName}}" catchtap="copyName" class="copy iconfont icon-nomely-copy"></text> -->
   </view>
   <rich-text class="sentence" nodes="{{filter.formatSentence(givenName, sentence)}}"></rich-text>
-  <view class="source"><text class="label">[{{dynasty}}]</text><text class="label">{{author}}</text><text class="label">《{{title}}》</text></view>
+  <view class="bottom">
+    <view class="source"><text class="label">[{{dynasty}}]</text><text class="label">{{author}}</text><text class="label">《{{title}}》</text></view>
+    <view class="actions">
+      <text data-name="{{familyName}}{{givenName}}" catchtap="copyName" class="copy iconfont icon-nomely-copy"></text>
+      <view class="share-container">
+        <text data-name="{{familyName}}{{givenName}}" class="share text iconfont icon-nomely-share"></text>
+        <button plain='true' open-type='share' class='share button' data-name="{{familyName}}{{givenName}}"></button>
+      </view>
+    </view>
+  </view>
 </view>

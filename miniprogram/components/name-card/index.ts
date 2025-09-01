@@ -45,6 +45,7 @@ Component({
         success () {
           wx.showToast({
             title: "姓名复制成功",
+            icon: "none",
           })
         },
       });
