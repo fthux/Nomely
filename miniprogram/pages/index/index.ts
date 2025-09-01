@@ -4,6 +4,7 @@ import books from '../../data/index'
 import { NameDescriptions, CommonFamilyNames } from "../../constants";
 import { randomInt, removeDuplicateChars, removeNonChineseAndWhitespace } from "../../utils/util";
 import { UserDataMgr } from "../../utils/user-data-mgr";
+const DefaultExcludedWords = "胸鬼懒禽鸟鸡我邪罪凶丑仇鼠蟋蟀淫秽妹狐鸡鸭蝇悔鱼肉苦犬吠窥血丧饥女搔父母昏狗蟊疾病痛死潦哀痒害蛇牲妇狸鹅穴畜烂兽靡爪氓劫鬣螽毛婚姻匪婆羞辱";
 
 Page({
   data: {
@@ -86,6 +87,31 @@ Page({
     });
     UserDataMgr.setExcludedWords(this.data.excludedWordsAll).save();
   },
+  showExcludedWordsTips() {
+    wx.showModal({
+      title: "常用排除字建议",
+      cancelText: "关闭",
+      cancelColor: "#666666",
+      confirmText: "一键复制",
+      confirmColor: "#14B8A6",
+      content: `以下是一些在传统姓名学或日常语境中通常会避免使用的汉字，排除它们有助于让名字的寓意更加美好。\n 「${DefaultExcludedWords}」`,
+      success(res) {
+        if (res.confirm) {
+          wx.setClipboardData({
+            data: DefaultExcludedWords,
+            success() {
+              wx.showToast({
+                title: "排除字复制成功",
+                icon: "none",
+              })
+            },
+          });
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      },
+    });
+  },
   genNames() {
     if (this.data.familyName.trim() === "") {
       wx.showToast({
@@ -161,6 +187,4 @@ Page({
     }
     return first <= second ? `${arr[first]}${arr[second]}` : `${arr[second]}${arr[first]}`;
   },
-
-
 });

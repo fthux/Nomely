@@ -30,6 +30,20 @@ page {
     .form-item:first-child {
       margin-top: 0;
     }
+    .form-item.excluded-words .form-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .right {
+        color: var(--primary-color);
+        font-size: 24rpx;
+        font-weight: 500;
+        .icon {
+          font-size: 24rpx;
+          margin-right: 6rpx;
+        }
+      }
+    }
     .form-label {
       margin-bottom: 14rpx;
     }
