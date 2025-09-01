@@ -81,10 +81,10 @@ page {
     .common-family-names {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
-      gap: 20rpx;
+      justify-content: space-between;
+      gap: 16rpx;
       font-size: 24rpx;
-      line-height: 34rpx;
+      line-height: 24rpx;
       font-weight: 500;
       .classic,
       .common-family-name {
