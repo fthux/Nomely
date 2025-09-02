@@ -8,15 +8,16 @@
     .content {
       display: flex;
       flex-direction: column;
-      font-size: 24rpx;
       .question {
         color: var(--primary-color);
-        line-height: 34rpx;
+        font-size: 31rpx;
+        line-height: 49rpx;
       }
       .answer {
         margin-top: 14rpx;
         color: rgb(71, 85, 105);
-        line-height: 38rpx;
+        font-size: 28rpx;
+        line-height: 44rpx;
       }
     }
   }

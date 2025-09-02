@@ -8,11 +8,11 @@
   <view class="bottom">
     <view class="source"><text class="label">[{{dynasty}}]</text><text class="label">{{author}}</text><text class="label">《{{title}}》</text></view>
     <view class="actions">
-      <!-- <text data-name="{{familyName}}{{givenName}}" catchtap="copyName" class="copy iconfont icon-nomely-copy"></text> -->
-      <!-- <view class="share-container">
+      <text data-name="{{familyName}}{{givenName}}" catchtap="copyName" class="copy iconfont icon-nomely-copy"></text>
+      <view class="share-container">
         <text data-name="{{familyName}}{{givenName}}" class="share text iconfont icon-nomely-share"></text>
         <button plain='true' open-type='share' class='share button' data-name="{{familyName}}{{givenName}}"></button>
-      </view> -->
+      </view>
     </view>
   </view>
 </view>

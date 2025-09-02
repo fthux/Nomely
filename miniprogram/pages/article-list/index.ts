@@ -1,5 +1,5 @@
 import books from "../../data/index";
-import { randomInt } from "../../utils/util";
+import { getShareMenuMessage, getShareTimelineMessage, randomInt } from "../../utils/util";
 
 Page({
   data: {
@@ -48,5 +48,11 @@ Page({
   },
   onReachBottom () {
     this.fetchMoreArticles();
+  },
+  onShareAppMessage(res: WechatMiniprogram.Page.IShareAppMessageOption) {
+    return getShareMenuMessage(res);
+  },
+  onShareTimeline () {
+    return getShareTimelineMessage();
   },
 });

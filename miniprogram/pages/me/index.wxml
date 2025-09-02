@@ -20,13 +20,14 @@
           </view>
           <text class="more iconfont icon-nomely-arrow-right"></text>
         </view>
-        <!-- <view class="item" catchtap="openAboutPage" hover-class="item-hover">
+        <view class="item" hover-class="item-hover">
           <view class="left">
             <text class="icon iconfont icon-nomely-share"></text>
             <view class="label">分享「名语屋」</view>
           </view>
           <text class="more iconfont icon-nomely-arrow-right"></text>
-        </view> -->
+          <button plain='true' open-type='share' class='share button'></button>
+        </view>
       </view>
     </view>
   </view>
