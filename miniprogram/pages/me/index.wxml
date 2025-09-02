@@ -6,6 +6,13 @@
       <view class="title">赠子佳名，山高水长</view>
       <view class="desc">一份美名，一生厚礼</view>
       <view class="items">
+        <!-- <view class="item" catchtap="openAboutPage" hover-class="item-hover">
+          <view class="left">
+            <text class="icon iconfont icon-nomely-tips"></text>
+            <view class="label">诗词飞花令</view>
+          </view>
+          <text class="more iconfont icon-nomely-arrow-right"></text>
+        </view> -->
         <view class="item" catchtap="openAboutPage" hover-class="item-hover">
           <view class="left">
             <text class="icon iconfont icon-nomely-tips"></text>
@@ -13,6 +20,13 @@
           </view>
           <text class="more iconfont icon-nomely-arrow-right"></text>
         </view>
+        <!-- <view class="item" catchtap="openAboutPage" hover-class="item-hover">
+          <view class="left">
+            <text class="icon iconfont icon-nomely-share"></text>
+            <view class="label">分享「名语屋」</view>
+          </view>
+          <text class="more iconfont icon-nomely-arrow-right"></text>
+        </view> -->
       </view>
     </view>
   </view>

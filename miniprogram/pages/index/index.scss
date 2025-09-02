@@ -127,6 +127,7 @@ page {
   }
   .generate {
     position: fixed;
+    z-index: 100;
     left: 32rpx;
     right: 32rpx;
     // bottom: calc(env(safe-area-inset-bottom) / 2);

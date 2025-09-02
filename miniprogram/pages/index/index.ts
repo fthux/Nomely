@@ -197,17 +197,17 @@ Page({
     }
     return first <= second ? `${arr[first]}${arr[second]}` : `${arr[second]}${arr[first]}`;
   },
-  onShareAppMessage(res: WechatMiniprogram.Page.IShareAppMessageOption) {
-    if (res.from === "button") {
-      return {
-        title: ShareButtonTexts[randomInt(0, ShareButtonTexts.length-1)].replace("$",res.target?.dataset?.name),
-        path: '/pages/index/index',
-      }
-    } else {
-      return {
-        title: ShareMenuTexts[randomInt(0, ShareMenuTexts.length-1)].replace("$",res.target?.dataset?.name),
-        path: '/pages/index/index',
-      }
-    }
-  },
+  // onShareAppMessage(res: WechatMiniprogram.Page.IShareAppMessageOption) {
+  //   if (res.from === "button") {
+  //     return {
+  //       title: ShareButtonTexts[randomInt(0, ShareButtonTexts.length-1)].replace("$",res.target?.dataset?.name),
+  //       path: '/pages/index/index',
+  //     }
+  //   } else {
+  //     return {
+  //       title: ShareMenuTexts[randomInt(0, ShareMenuTexts.length-1)].replace("$",res.target?.dataset?.name),
+  //       path: '/pages/index/index',
+  //     }
+  //   }
+  // },
 });

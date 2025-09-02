@@ -53,6 +53,7 @@ page {
           font-size: 28rpx;
           font-weight: 500;
           color: rgb(30, 41, 59);
+          margin-top: 20rpx;
           .left {
             display: flex;
             align-items: center;
@@ -66,6 +67,9 @@ page {
             font-size: 24rpx;
             color: rgb(148, 163, 184);
           }
+        }
+        .item:first-child {
+          margin-top: 0;
         }
       }
     }
