@@ -1,14 +1,15 @@
 
 import rand from "./rand";
 import books from '../../data/index'
-import { NameDescriptions, CommonFamilyNames, DefaultExcludedWords } from "../../constants";
-import { randomInt, removeDuplicateChars, removeNonChineseAndWhitespace, getShareMenuMessage, getShareTimelineMessage } from "../../utils/util";
+import { NameDescriptions, CommonFamilyNames, DefaultExcludedWords, EventUncollectName } from "../../constants";
+import { randomInt, removeDuplicateChars, removeNonChineseAndWhitespace, getShareMenuMessage, getShareTimelineMessage, generateUUID } from "../../utils/util";
 import { UserDataMgr } from "../../utils/user-data-mgr";
+import eventBus from "../../utils/event-bus";
 
 Page({
   data: {
     nameDescriptions: NameDescriptions,
-    nameDataList: [] as INomely.INameData[],
+    nameDataList: [] as INomely.INameCardData[],
     familyName: "",
     books,
     chosenBook: books[0],
@@ -18,12 +19,16 @@ Page({
     excludedWordsAll: "",
   },
   onLoad() {
+    eventBus.on(EventUncollectName, this.onUncollectFavoriteByUuid);
     const excludedWords = UserDataMgr.excludedWords;
     if (!excludedWords) return;
     this.setData({
       excludedWordsAll: excludedWords,
       excludedWordsInput: excludedWords.length >= 10 ? `${excludedWords.slice(0, 10)}...` : excludedWords,
     });
+  },
+  onUnload () {
+    eventBus.off(EventUncollectName, this.onUncollectFavoriteByUuid);
   },
   chooseCommonFamilyName(e: WechatMiniprogram.TouchEvent) {
     const dataset = e.currentTarget.dataset;
@@ -129,14 +134,24 @@ Page({
     const timer = setTimeout(() => {
       clearTimeout(timer);
       // wx.hideLoading();
-      const nameDataList: INomely.INameData[] = [];
+      const nameDataList: INomely.INameCardData[] = [];
       for (let i = 0; i < 10; i++) {
         const nameData = this.genName(this.data.chosenBook);
         if (!nameData) {
           i--;
           continue;
         }
-        nameDataList.push(nameData);
+        nameDataList.push({
+          uuid: generateUUID(),
+          isFavorite: false,
+          familyName: this.data.familyName,
+          givenName: nameData.name,
+          sentence: nameData.sentence,
+          title: nameData.title,
+          author: nameData.author,
+          book: nameData.book,
+          dynasty: nameData.dynasty,
+        });
       }
       this.setData({
         isGenerating: false,
@@ -186,6 +201,29 @@ Page({
     }
     return first <= second ? `${arr[first]}${arr[second]}` : `${arr[second]}${arr[first]}`;
   },
+  onCollectFavorite(e: any) {
+    const uuid = e.detail?.uuid;
+    const index = this.data.nameDataList.findIndex(item => item.uuid === uuid);
+    if (index === -1) return;
+    this.data.nameDataList[index].isFavorite = true;
+    this.setData({
+      [`nameDataList[${index}]`]: this.data.nameDataList[index],
+    });
+    UserDataMgr.addFavoriteName(this.data.nameDataList[index]).save();
+  },
+  onUncollectFavorite(e: any) {
+    const uuid = e.detail?.uuid;
+    this.onUncollectFavoriteByUuid(uuid);
+    UserDataMgr.removeFavoriteName(uuid).save();
+  },
+  onUncollectFavoriteByUuid(uuid: string) {
+    const index = this.data.nameDataList.findIndex(item => item.uuid === uuid);
+    if (index === -1) return;
+    this.data.nameDataList[index].isFavorite = false;
+    this.setData({
+      [`nameDataList[${index}]`]: this.data.nameDataList[index],
+    });
+  },
   onShareAppMessage(res: WechatMiniprogram.Page.IShareAppMessageOption) {
     if (res.from === "button") {
       return getShareMenuMessage(res);
@@ -193,7 +231,7 @@ Page({
       return getShareMenuMessage(res);
     }
   },
-  onShareTimeline () {
+  onShareTimeline() {
     return getShareTimelineMessage();
   },
 });

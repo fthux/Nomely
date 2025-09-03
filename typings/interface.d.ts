@@ -22,4 +22,15 @@ declare namespace INomely {
     book: string,
     dynasty: string,
   }
+  type INameCardData = {
+    uuid: string,
+    isFavorite: boolean,
+    familyName: string,
+    givenName: string;
+    sentence: string,
+    title: string,
+    author: string,
+    book: string,
+    dynasty: string,
+  }
 }

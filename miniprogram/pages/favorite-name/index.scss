@@ -1,0 +1,47 @@
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .empty {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .empty-icon {
+      color: rgb(229, 231, 235);
+      font-size: 140rpx;
+      margin: 0 auto 48rpx;
+    }
+    .title {
+      font-size: 34rpx;
+      font-weight: 600;
+      line-height: 48rpx;
+      color: rgb(30, 41, 59);
+    }
+    .desc {
+      font-size: 24rpx;
+      line-height: 34rpx;
+      margin-top: 14rpx;
+      color: rgb(100, 116, 139);
+    }
+  }
+  
+  .card {
+    padding: 32rpx;
+  }
+}

@@ -30,7 +30,7 @@
   </view>
   <view class="name-list card" wx:if="{{nameDataList.length}}">
     <view class="name-title">为你甄选</view>
-    <name-card wx:for="{{nameDataList}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" familyName="{{familyName}}" givenName="{{item.name}}" author="{{item.author}}" book="{{item.book}}" dynasty="{{item.dynasty}}" sentence="{{item.sentence}}" title="{{item.title}}"></name-card>
+    <name-card showBorder bind:collect="onCollectFavorite" bind:uncollect="onUncollectFavorite" wx:for="{{nameDataList}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" uuid="{{item.uuid}}" isFavorite="{{item.isFavorite}}" familyName="{{familyName}}" givenName="{{item.givenName}}" author="{{item.author}}" book="{{item.book}}" dynasty="{{item.dynasty}}" sentence="{{item.sentence}}" title="{{item.title}}"></name-card>
   </view>
   <view class="generate" catchtap="genNames">{{isGenerating ? "生成中..." : "生成名字"}}</view>
 </view>

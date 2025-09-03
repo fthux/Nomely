@@ -4,7 +4,8 @@
     "pages/book-list/index",
     "pages/article-list/index",
     "pages/me/index",
-    "pages/qa/index"
+    "pages/qa/index",
+    "pages/favorite-name/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",

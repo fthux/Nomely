@@ -1,6 +1,8 @@
+.border-top {
+  border-top: 2rpx solid var(--divider-base-color);
+}
 .item {
   padding: 34rpx 0;
-  border-top: 2rpx solid var(--divider-base-color);
   .name {
     display: flex;
     align-content: center;
@@ -41,14 +43,18 @@
     .actions {
       display: flex;
       align-items: center;
+      .infavorite {
+        color: rgb(234, 179, 8);
+      }
       .iconfont {
         font-size: 30rpx;
+        margin-right: 20rpx;
       }
       .share-container {
         width: 30rpx;
         height: 30rpx;
-        margin-left: 20rpx;
         position: relative;
+        margin-left: 0;
       }
       .share.text {
         position: absolute;

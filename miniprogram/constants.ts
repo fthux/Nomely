@@ -24,3 +24,5 @@ export const ShareMenuImages = [
   "/images/share/img1.png",
   "/images/share/img2.png",
 ];
+
+export const EventUncollectName = "EventUncollectName";

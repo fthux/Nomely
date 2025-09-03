@@ -1,0 +1,13 @@
+<navigation-bar isBack="{{true}}"><view slot="content">我的收藏</view></navigation-bar>
+<view class="container">
+  <view class="empty" wx:if="{{!nameDataList.length}}">
+    <view class="wrapper">
+      <text class="empty-icon iconfont icon-nomely-tag"></text>
+      <view class="title">暂无收藏</view>
+      <view class="desc">快去发现喜欢的名字吧！</view>
+    </view>
+  </view>
+  <view class="name-list card" wx:else>
+    <name-card showBorder="{{idx !== 0}}" bind:uncollect="onUncollectFavorite" bind:uncollect="onUncollectFavorite" wx:for="{{nameDataList}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" uuid="{{item.uuid}}" isFavorite="{{item.isFavorite}}" familyName="{{item.familyName}}" givenName="{{item.givenName}}" author="{{item.author}}" book="{{item.book}}" dynasty="{{item.dynasty}}" sentence="{{item.sentence}}" title="{{item.title}}"></name-card>
+  </view>
+</view>

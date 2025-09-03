@@ -24,9 +24,9 @@ page {
       justify-content: center;
       align-items: center;
       .book-icon {
-        width: 140rpx;
-        height: 140rpx;
+        font-size: 140rpx;
         margin: 0 auto 48rpx;
+        color: var(--primary-color);
       }
       .title {
         font-size: 34rpx;
