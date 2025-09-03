@@ -8,6 +8,6 @@
     </view>
   </view>
   <view class="name-list card" wx:else>
-    <name-card showBorder="{{idx !== 0}}" bind:uncollect="onUncollectFavorite" bind:uncollect="onUncollectFavorite" wx:for="{{nameDataList}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" uuid="{{item.uuid}}" isFavorite="{{item.isFavorite}}" familyName="{{item.familyName}}" givenName="{{item.givenName}}" author="{{item.author}}" book="{{item.book}}" dynasty="{{item.dynasty}}" sentence="{{item.sentence}}" title="{{item.title}}"></name-card>
+    <name-card showBorder="{{idx !== 0}}" showMark bind:uncollect="onUncollectFavorite" bind:addmark="onAddMarkFavorite" wx:for="{{nameDataList}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" uuid="{{item.uuid}}" isFavorite="{{item.isFavorite}}" familyName="{{item.familyName}}" givenName="{{item.givenName}}" author="{{item.author}}" book="{{item.book}}" dynasty="{{item.dynasty}}" sentence="{{item.sentence}}" title="{{item.title}}" mark="{{item.mark}}"></name-card>
   </view>
 </view>

@@ -44,9 +44,17 @@ Component({
       type: String,
       default: ''
     },
+    mark: {
+      type: String,
+      default: ''
+    },
     showBorder: {
       type: Boolean,
       default: true
+    },
+    showMark: {
+      type: Boolean,
+      default: false
     },
   },
   methods: {
@@ -57,6 +65,9 @@ Component({
     },
     uncollectName(e: WechatMiniprogram.TouchEvent) {
       this.triggerEvent("uncollect", { uuid: this.properties.uuid, });
+    },
+    addMark (e: WechatMiniprogram.TouchEvent) {
+      this.triggerEvent("addmark", { uuid: this.properties.uuid, });
     },
     copyName(e: WechatMiniprogram.TouchEvent) {
       const dataset = e.currentTarget.dataset;

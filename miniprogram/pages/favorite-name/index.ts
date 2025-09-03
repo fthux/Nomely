@@ -13,6 +13,7 @@ Page({
         return { ...item, isFavorite: true }
       }),
     });
+    console.error("d: ", this.data.nameDataList);
   },
   onUncollectFavorite(e: any) {
     const uuid = e.detail?.uuid;
@@ -28,6 +29,36 @@ Page({
         break;
       }
     }
+  },
+  onAddMarkFavorite(e: any) {
+    const uuid = e.detail?.uuid;
+    const index = this.data.nameDataList.findIndex(item => item.uuid === uuid);
+    if (index === -1) return;
+    const itemData = this.data.nameDataList[index];
+    const that = this;
+    wx.showModal({
+      title: `为“${itemData.familyName}${itemData.givenName}”添加备注`,
+      cancelText: "取消",
+      cancelColor: "#666666",
+      confirmText: "保存",
+      confirmColor: "#14B8A6",
+      content: itemData.mark || "",
+      editable: true,
+      placeholderText: "所思所想...",
+      success(res) {
+        if (res.confirm) {
+          const mark = res.content;
+          itemData.mark = mark;
+          that.setData({
+            [`nameDataList[${index}]`]: itemData,
+          });
+          UserDataMgr.updateFavoriteNameMark(uuid, mark).save();
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      },
+    });
+
   },
   onShareAppMessage(res: WechatMiniprogram.Page.IShareAppMessageOption) {
     return getShareMenuMessage(res);

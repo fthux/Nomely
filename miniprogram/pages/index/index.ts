@@ -151,6 +151,7 @@ Page({
           author: nameData.author,
           book: nameData.book,
           dynasty: nameData.dynasty,
+          mark: "",
         });
       }
       this.setData({

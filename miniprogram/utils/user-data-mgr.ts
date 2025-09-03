@@ -43,6 +43,16 @@ export class UserDataMgr {
     }
     return this;
   }
+  public static updateFavoriteNameMark(uuid: string, mark: string): typeof UserDataMgr {
+    if (!uuid) return this;
+    for (let i = 0; i < this.data.favoriteNames.length; i++) {
+      if (this.data.favoriteNames[i].uuid === uuid) {
+        this.data.favoriteNames[i].mark = mark;
+        break;
+      }
+    }
+    return this;
+  }
   public static save() {
     wx.setStorageSync(UserDataSaveKey, JSON.stringify(this.data));
   }

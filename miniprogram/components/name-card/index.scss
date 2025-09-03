@@ -26,9 +26,9 @@
     color: rgb(71, 85, 105);
   }
   .bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
     margin-top: 14rpx;
     font-size: 24rpx;
     color: rgb(100, 116, 139);
@@ -40,15 +40,27 @@
         margin-right: 0;
       }
     }
+    .mark {
+      background-color: rgba(240, 253, 250, 0.7);
+      border-radius: 14rpx;
+      margin-top: 20rpx;
+      padding: 20rpx;
+      text-align: left;
+      color: rgb(71, 85, 105);
+      font-size: 24rpx;
+      line-height: 38rpx;
+    }
     .actions {
       display: flex;
+      justify-content: flex-end;
       align-items: center;
+      margin-top: 30rpx;
       .infavorite {
         color: rgb(234, 179, 8);
       }
       .iconfont {
         font-size: 30rpx;
-        margin-right: 20rpx;
+        margin-right: 30rpx;
       }
       .share-container {
         width: 30rpx;

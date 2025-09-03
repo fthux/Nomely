@@ -32,5 +32,6 @@ declare namespace INomely {
     author: string,
     book: string,
     dynasty: string,
+    mark: string,
   }
 }

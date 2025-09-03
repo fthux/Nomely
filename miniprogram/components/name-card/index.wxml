@@ -7,9 +7,11 @@
   <rich-text class="sentence" nodes="{{filter.formatSentence(givenName, sentence)}}"></rich-text>
   <view class="bottom">
     <view class="source"><text class="label">[{{dynasty}}]</text><text class="label">{{author}}</text><text class="label">《{{title}}》</text></view>
+    <view wx:if="{{mark.length}}" class="mark">{{mark}}</view>
     <view class="actions">
       <text wx:if="{{!isFavorite}}" data-name="{{familyName}}{{givenName}}" catchtap="collectName" class="favorite iconfont icon-nomely-favorite-star"></text>
       <text wx:if="{{isFavorite}}" data-name="{{familyName}}{{givenName}}" catchtap="uncollectName" class="infavorite iconfont icon-nomely-star-filled"></text>
+      <text wx:if="{{showMark}}" data-uuid="{{uuid}}" catchtap="addMark" class="addMark iconfont icon-nomely-edit"></text>
       <text data-name="{{familyName}}{{givenName}}" catchtap="copyName" class="copy iconfont icon-nomely-copy"></text>
       <view class="share-container">
         <text data-name="{{familyName}}{{givenName}}" class="share text iconfont icon-nomely-share"></text>
