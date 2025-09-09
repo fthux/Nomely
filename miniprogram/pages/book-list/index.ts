@@ -3,7 +3,8 @@ import { getShareMenuMessage, getShareTimelineMessage } from "../../utils/util";
 
 Page({
   data: {
-    books,
+    books1: books.slice(0, Math.floor(books.length / 2)),
+    books2: books.slice(Math.floor(books.length / 2), books.length - 1),
   },
   chooseBook(e: WechatMiniprogram.TouchEvent) {
     const dataset = e.currentTarget.dataset;

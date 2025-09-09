@@ -8,6 +8,7 @@
     </view>
   </view>
   <view class="name-list card" wx:else>
+    <ad unit-id="adunit-f545cc3a91fb35cd"></ad>
     <name-card showBorder="{{idx !== 0}}" showMark bind:uncollect="onUncollectFavorite" bind:addmark="onAddMarkFavorite" wx:for="{{nameDataList}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" uuid="{{item.uuid}}" isFavorite="{{item.isFavorite}}" familyName="{{item.familyName}}" givenName="{{item.givenName}}" author="{{item.author}}" book="{{item.book}}" dynasty="{{item.dynasty}}" sentence="{{item.sentence}}" title="{{item.title}}" mark="{{item.mark}}"></name-card>
   </view>
 </view>

@@ -1,4 +1,6 @@
 <navigation-bar><view slot="content">诗意之名，始于卷帙</view></navigation-bar>
 <view class="container">
-  <book-item wx:for="{{books}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" icon="back" bookName="{{item.name}}" data-bookid="{{item.id}}" data-bookId="{{item.id}}" bookDescription="{{item.description}}" bindtap="chooseBook"></book-item>
+  <book-item wx:for="{{books1}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" icon="back" bookName="{{item.name}}" data-bookid="{{item.id}}" data-bookId="{{item.id}}" bookDescription="{{item.description}}" bindtap="chooseBook"></book-item>
+  <ad unit-id="adunit-387358f54209860f"></ad>
+  <book-item wx:for="{{books2}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" icon="back" bookName="{{item.name}}" data-bookid="{{item.id}}" data-bookId="{{item.id}}" bookDescription="{{item.description}}" bindtap="chooseBook"></book-item>
 </view>
