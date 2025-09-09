@@ -6,6 +6,8 @@ import { randomInt, removeDuplicateChars, removeNonChineseAndWhitespace, getShar
 import { UserDataMgr } from "../../utils/user-data-mgr";
 import eventBus from "../../utils/event-bus";
 
+let interstitialAd: WechatMiniprogram.InterstitialAd;
+let generateNameCount: number = 0;
 Page({
   data: {
     nameDescriptions: NameDescriptions,
@@ -19,6 +21,7 @@ Page({
     excludedWordsAll: "",
   },
   onLoad() {
+    this.initInterstitialAd();
     eventBus.on(EventUncollectName, this.onUncollectFavoriteByUuid);
     const excludedWords = UserDataMgr.excludedWords;
     if (!excludedWords) return;
@@ -29,6 +32,25 @@ Page({
   },
   onUnload () {
     eventBus.off(EventUncollectName, this.onUncollectFavoriteByUuid);
+  },
+  initInterstitialAd () {
+    if (wx.createInterstitialAd) {
+      interstitialAd = wx.createInterstitialAd({
+        adUnitId: 'adunit-c83634ff3bc695cd'
+      })
+      interstitialAd.onLoad(() => {});
+      interstitialAd.onError((err) => {
+        console.error('插屏广告加载失败', err);
+      })
+      interstitialAd.onClose(() => {});
+    }
+  },
+  showInterstitialAd () {
+    if (interstitialAd) {
+      interstitialAd.show().catch((err) => {
+        console.error('插屏广告显示失败', err);
+      });
+    }
   },
   chooseCommonFamilyName(e: WechatMiniprogram.TouchEvent) {
     const dataset = e.currentTarget.dataset;
@@ -117,6 +139,12 @@ Page({
     });
   },
   genNames() {
+    if (generateNameCount >= randomInt(8, 16)) {
+      generateNameCount = 0;
+      this.showInterstitialAd();
+    } else {
+      generateNameCount += 1;
+    }
     if (this.data.familyName.trim() === "") {
       wx.showToast({
         title: "请输入您的姓氏",
