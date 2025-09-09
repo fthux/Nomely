@@ -13,7 +13,6 @@ Page({
         return { ...item, isFavorite: true }
       }),
     });
-    console.error("d: ", this.data.nameDataList);
   },
   onUncollectFavorite(e: any) {
     const uuid = e.detail?.uuid;

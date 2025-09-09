@@ -12,12 +12,17 @@
         <view class="form-label">1. 您的姓氏</view>
         <input value="{{familyName}}" class="form-input" bindinput="onInputFamilyName" maxlength="2" placeholder="例如：张" placeholder-style="color: rgb(156, 163, 175)" confirm-type="done" type="text"/>
         <view class='common-family-names'>
-          <view catchtap="chooseCommonFamilyName" class="common-family-name {{familyName === item ? 'active' : ''}}" wx:for="{{commonFamilyNames}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" data-name="{{item}}">{{item}}</view></view>
+          <view class="wrapper">
+            <view catchtap="chooseCommonFamilyName" class="common-family-name {{familyName === item ? 'active' : ''}}" wx:for="{{commonFamilyNames}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" data-name="{{item}}">{{item}}</view>
+          </view>
+        </view>
       </view>
       <view class="form-item">
         <view class="form-label">2. 选择灵感来源</view>
         <view class="classics">
-          <view catchtap="chooseBook" class="classic {{chosenBook.id === item.id ? 'active' : ''}}" wx:for="{{books}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" data-id="{{item.id}}" data-name="{{item.name}}">{{item.name}}</view>
+          <view class="wrapper">
+            <view catchtap="chooseBook" class="classic {{chosenBook.id === item.id ? 'active' : ''}}" wx:for="{{books}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" data-id="{{item.id}}" data-name="{{item.name}}">{{item.name}}</view>
+          </view>
         </view>
       </view>
       <view class="form-item excluded-words">

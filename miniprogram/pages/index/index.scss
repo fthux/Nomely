@@ -80,18 +80,25 @@ page {
     .classics,
     .common-family-names {
       display: flex;
+      justify-content: center;
+    }
+    .classics .wrapper,
+    .common-family-names .wrapper {
+      display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 16rpx;
+      justify-content: flex-start;
+      gap: 24rpx;
       font-size: 24rpx;
       line-height: 24rpx;
       font-weight: 500;
       .classic,
       .common-family-name {
+        flex: 1 1 auto;
         padding: 14rpx 28rpx;
         border: 2rpx solid rgb(209, 213, 219);
         background-color: rgba(255, 255, 255, 0.7);
         border-radius: 9999rpx;
+        text-align: center;
       }
       .classic.active,
       .common-family-name.active {
