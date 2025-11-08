@@ -2,7 +2,7 @@
 
 > 起名小程序
 <p>从诗经、楚辞、唐诗宋词、乐府诗集、古诗三百首、著名楚辞等古典文籍中起名字</p>
-<img src="./images/logo.png" align="right" alt="Nomely logo">
+<!-- <img src="./images/logo.png" align="right" alt="Nomely logo"> -->
 <p align='center'>
   <img src='./images/qrcode.jpg'>
 </p>
@@ -25,11 +25,11 @@
 `UI` 页面基本上全部由 `Gemini` 生成，完整的 `APP` 链接可访问 [aistudio](https://ai.studio/apps/drive/1P7XoluwC5s7CL1xeVv8NeXWjTQ_OwvHf)。贴几张 `Gemini` 生成的 `UI`：
 
 <div>
-<img src='./images/screenshot1.png' style='width:25px;'>
-<img src='./images/screenshot2.png' style='width:25px;'>
-<img src='./images/screenshot3.png' style='width:25px;'>
-<img src='./images/screenshot4.png' style='width:25px;'>
-<img src='./images/screenshot5.png' style='width:25px;'>
+<img src='./images/screenshot1.png' style='width:250px;'>
+<img src='./images/screenshot2.png' style='width:250px;'>
+<img src='./images/screenshot3.png' style='width:250px;'>
+<img src='./images/screenshot4.png' style='width:250px;'>
+<img src='./images/screenshot5.png' style='width:250px;'>
 </div>
 
 ## 名字的意义
