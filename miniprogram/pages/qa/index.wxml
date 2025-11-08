@@ -1,6 +1,6 @@
 <navigation-bar isBack="{{true}}"><view slot="content">常见问题</view></navigation-bar>
 <view class="container">
-  <view class="item" wx:for="{{questionAndAnswers2}}" wx:for-index="idx" wx:for-item="item" wx:key="idx">
+  <view class="item" wx:for="{{questionAndAnswers1}}" wx:for-index="idx" wx:for-item="item" wx:key="idx">
     <primary-dot></primary-dot>
     <view class="content">
       <view class="question">{{item.question}}</view>
