@@ -69,16 +69,16 @@
 [爱发电](https://ifdian.net/a/fthux)
 
 ### Bitcoin
-<img src="bitcoin.png" height="80"/> `3NvpQfHYZtLUtRajGbPdNFnK8in3vyvNqx`
+<img src="./images/bitcoin.png" height="80"/> `3NvpQfHYZtLUtRajGbPdNFnK8in3vyvNqx`
 
 ### Ethereum
-<img src="ethereum.png" height="80"/> `0x889408D0A04a1ef32c914A6398f955b83f3554a2`
+<img src="./images/ethereum.png" height="80"/> `0x889408D0A04a1ef32c914A6398f955b83f3554a2`
 
 ### 微信赞赏码
 <img src="./images/wxzsm.png" width="250" />
 
 ## Contributors
-* fthux, (@fthux)[https://github.com/fthux]
+* fthux, [@fthux](https://github.com/fthux)
 
 ## License
 
