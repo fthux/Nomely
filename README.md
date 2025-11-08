@@ -1,4 +1,69 @@
 # Nomely
 
-五行插件
-https://github.com/waterbeside/lunisolar
+> 一款从诗经、楚辞、唐诗宋词、乐府诗集、古诗三百首、著名楚辞等古典文籍中起名字的微信小程序
+<p align='center'>
+  <img src='https://raw.githubusercontent.com/fthux/miniprogram/master/nomely/images/qrcode.jpg'>
+</p>
+
+## 数据来源
+数据来自[gushi_namer](https://github.com/holynova/gushi_namer)。
+
+## 开发经历
+在孩子出生前很早起名字就排上了日程，当时起名字用到了各种AI，各种修改提示词，每天一有时间就点开AI，让AI吐N个名字出来，这种情况陆陆续续持续了好几个月，但始终还是没有满意的名字。后来还是回到了随机生成这条看天意的路上。看到[gushi_namer](https://github.com/holynova/gushi_namer)项目后，为了便于查看，我就做了一个丑陋不堪的`mvp`微信小程序（名语屋的原型），基于这个原型，我最终选中了6个名字（3男3女），然后和家里的领导一商量，最终敲定了1男1女两个名字。而其中的一个名字，正是我孩子的正式名字。
+
+从我确认了孩子的正式名字后，就想把这个原型整成正式的小程序，但是因为各种事情的耽搁，几个月后小程序才正式上线。作为一个没有审美的搬砖工人，`UI`页面基本上全部由`Gemini`生成。具体的链接可见下文。
+
+最后，希望每个兄弟姐妹叔叔阿姨都能给自己的孩子取到心怡的名字。
+
+## 仓库地址
+> * github 仓库地址[https://github.com/fthux/nomely](https://github.com/fthux/nomely)。
+> * gitee 仓库地址[https://gitee.com/fthux/nomely](https://gitee.com/fthux/nomely)。
+
+## UI生成
+`UI`页面基本上全部由`Gemini`生成，完整的`APP`链接可访问[aistudio](https://ai.studio/apps/drive/1P7XoluwC5s7CL1xeVv8NeXWjTQ_OwvHf)。贴几张`Gemini`生成的`UI`：
+
+<div>
+<img src='https://raw.githubusercontent.com/fthux/miniprogram/master/nomely/images/screenshot1.png' style='width:25%;'>
+<img src='https://raw.githubusercontent.com/fthux/miniprogram/master/nomely/images/screenshot2.png' style='width:25%;'>
+<img src='https://raw.githubusercontent.com/fthux/miniprogram/master/nomely/images/screenshot3.png' style='width:25%;'>
+<img src='https://raw.githubusercontent.com/fthux/miniprogram/master/nomely/images/screenshot4.png' style='width:25%;'>
+<img src='https://raw.githubusercontent.com/fthux/miniprogram/master/nomely/images/screenshot5.png' style='width:25%;'>
+</div>
+
+## 名字的意义
+
+* 一名之立，旬月踟蹰”。名字，是父母赠予孩子的第一份厚礼。我们深知其重，故潜心于诗、骚、词、赋的浩瀚文海，为您精心撷取文采斐然、寓意深远的灵感，愿每个名字都承载着经典与祝福。
+* 为避常用名之普遍，并追求音律与字形之美，我们专选双字为名。与您的姓氏结合，构成和谐的三字姓名，既独特不易重复，又蕴含悠长的文化意境。
+
+## Q&A
+
+* Question
+为什么不直接用 AI 生成名字，而是让我自己挑选？
+* Answer
+我们认为，AI 最强大的地方在于“博学”，而非“创造”。借助AI的能力，我们可以从浩如烟海的古典文籍中精准地检索和匹配相关的诗句，这大大提升了效率。然而，名字是情感与期望的载体，最终的选择应源自人心的触动。我们为您呈现这些蕴含美意的“璞玉”，由您亲自雕琢、赋予其独特的生命力。这既保证了名字的文化底蕴，又保留了起名过程中最宝贵的人文温度。
+
+* Question
+为什么建议使用“姓+双字名”的组合？
+* Answer
+在当代，单字名（如“李昂”）虽然简洁，但重名率相对较高。双字名（如“李思源”）不仅能有效降低重名的可能性，也为名字的音律和谐与寓意深度提供了更广阔的空间。三个字的组合在汉语发音中往往更具节奏感，读来朗朗上口，也更能承载父母对孩子的美好祝愿。
+
+* Question
+随机“换一批”的方式会不会很麻烦？
+* Answer
+我们理解您可能觉得这需要花费更多时间，但这正是我们设计的初衷。起名是一次充满喜悦的探索之旅，而非一项追求效率的任务。“换一批”的功能就像在书海中随手翻阅，每一次点击都可能带来一次与美好名字的“不期而遇”。我们相信，这个为孩子寻觅专属印记的过程本身就充满意义，而花费的时间，终将化为名字里沉甸甸的爱与祝福。
+
+* Question
+未来会加入更多的古典文籍吗？
+* Answer
+当然会！我们正持续不断地扩充我们的灵感文库，计划未来会囊括更多朝代、更多体裁的经典之作。我们的目标是打造一个最全面、最富诗意的古典文学起名宝库，陪伴每一个家庭完成这项神圣而美好的使命。敬请期待！
+
+* Question
+可以指定生成男孩或女孩的名字吗？
+* Answer
+我们特意未加入严格的性别筛选功能，原因在于中国古典文学中的许多优美词汇本身是中性的，其意境的“刚”与“柔”往往取决于搭配和个人的解读。例如，“清川”既可形容男子的俊朗，亦可描绘女子的澄澈。我们鼓励您超越固有的性别标签，用心感受每个名字背后的音韵与意象，为您未来的“他”或“她”选择一个最能触动您心弦的佳名。真正的专属，往往诞生于这份不设限的探索之中。
+
+## License
+
+[GPLv3](LICENSE)
+
+Copyright (c) 2025-present, fthux
