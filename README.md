@@ -1,6 +1,8 @@
 # Nomely
 
-> 一款从诗经、楚辞、唐诗宋词、乐府诗集、古诗三百首、著名楚辞等古典文籍中起名字的微信小程序
+> 起名小程序
+<p>从诗经、楚辞、唐诗宋词、乐府诗集、古诗三百首、著名楚辞等古典文籍中起名字</p>
+<img src="./images/logo.png" align="right" alt="Nomely logo">
 <p align='center'>
   <img src='./images/qrcode.jpg'>
 </p>
@@ -11,7 +13,7 @@
 ## 开发经历
 在孩子出生前很早起名字就排上了日程，当时起名字用到了各种AI，各种修改提示词，每天一有时间就点开AI，让AI吐N个名字出来，这种情况陆陆续续持续了好几个月，但始终还是没有满意的名字。后来还是回到了随机生成这条看天意的路上。看到 [gushi_namer](https://github.com/holynova/gushi_namer) 项目后，为了便于查看，我就做了一个丑陋不堪的 `mvp` 微信小程序（名语屋的原型），基于这个原型，我最终选中了6个名字（3男3女），然后和家里的领导一商量，最终敲定了1男1女两个名字。而其中的一个名字，正是我孩子的正式名字。
 
-从我确认了孩子的正式名字后，就想把这个原型整成正式的小程序，但是因为各种事情的耽搁，几个月后小程序才正式上线。作为一个没有审美的搬砖工人，`UI` 页面基本上全部由 `Gemini` 生成。具体的链接可见下文。
+从我确认了孩子的正式名字后，就想把这个原型整成正式的小程序，但是因为各种事情的耽搁，几个月后小程序才正式上线。作为一个没有审美的搬砖工人，`UI` 页面基本上全部由 `Gemini` 生成。具体的链接可查看(UI生成)[#UI生成]。
 
 最后，希望每个兄弟姐妹叔叔阿姨都能给自己的孩子取到心怡的名字。
 
@@ -23,11 +25,11 @@
 `UI` 页面基本上全部由 `Gemini` 生成，完整的 `APP` 链接可访问 [aistudio](https://ai.studio/apps/drive/1P7XoluwC5s7CL1xeVv8NeXWjTQ_OwvHf)。贴几张 `Gemini` 生成的 `UI`：
 
 <div>
-<img src='./images/screenshot1.png' style='width:25%;'>
-<img src='./images/screenshot2.png' style='width:25%;'>
-<img src='./images/screenshot3.png' style='width:25%;'>
-<img src='./images/screenshot4.png' style='width:25%;'>
-<img src='./images/screenshot5.png' style='width:25%;'>
+<img src='./images/screenshot1.png' style='width:25px;'>
+<img src='./images/screenshot2.png' style='width:25px;'>
+<img src='./images/screenshot3.png' style='width:25px;'>
+<img src='./images/screenshot4.png' style='width:25px;'>
+<img src='./images/screenshot5.png' style='width:25px;'>
 </div>
 
 ## 名字的意义
@@ -61,6 +63,22 @@
 可以指定生成男孩或女孩的名字吗？
 * Answer
 我们特意未加入严格的性别筛选功能，原因在于中国古典文学中的许多优美词汇本身是中性的，其意境的“刚”与“柔”往往取决于搭配和个人的解读。例如，“清川”既可形容男子的俊朗，亦可描绘女子的澄澈。我们鼓励您超越固有的性别标签，用心感受每个名字背后的音韵与意象，为您未来的“他”或“她”选择一个最能触动您心弦的佳名。真正的专属，往往诞生于这份不设限的探索之中。
+
+## Buy me a coffee
+### 爱发电
+[爱发电](https://ifdian.net/a/fthux)
+
+### Bitcoin
+<img src="bitcoin.png" height="80"/> `3NvpQfHYZtLUtRajGbPdNFnK8in3vyvNqx`
+
+### Ethereum
+<img src="ethereum.png" height="80"/> `0x889408D0A04a1ef32c914A6398f955b83f3554a2`
+
+### 微信赞赏码
+<img src="./images/wxzsm.png" width="250" />
+
+## Contributors
+* fthux, (@fthux)[https://github.com/fthux]
 
 ## License
 
