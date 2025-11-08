@@ -16,6 +16,28 @@ Page({
   onShareAppMessage(res: WechatMiniprogram.Page.IShareAppMessageOption) {
     return getShareMenuMessage(res);
   },
+  copyGithub (e: WechatMiniprogram.TouchEvent) {
+    wx.setClipboardData({
+      data: "https://github.com/fthux/nomely",
+      success() {
+        wx.showToast({
+          title: "仓库地址复制成功",
+          icon: "none",
+        });
+      },
+    });
+  },
+  copyWechat (e: WechatMiniprogram.TouchEvent) {
+    wx.setClipboardData({
+      data: "d3hpZF96NWhyamFqdDFhOGwyMQ==",
+      success() {
+        wx.showToast({
+          title: "联系方式复制成功",
+          icon: "none",
+        });
+      },
+    });
+  },
   onShareTimeline () {
     return getShareTimelineMessage();
   },

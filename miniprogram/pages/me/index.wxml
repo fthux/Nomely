@@ -35,6 +35,20 @@
           <text class="more iconfont icon-nomely-arrow-right"></text>
           <button plain='true' open-type='share' class='share button'></button>
         </view>
+        <view class="item" catchtap="copyGithub" hover-class="item-hover">
+          <view class="left">
+            <text class="icon iconfont icon-nomely-github"></text>
+            <view class="label">GitHub 开源</view>
+          </view>
+          <text class="more iconfont icon-nomely-arrow-right"></text>
+        </view>
+        <view class="item" catchtap="copyWechat" hover-class="item-hover">
+          <view class="left">
+            <text class="icon iconfont icon-nomely-wechat"></text>
+            <view class="label">联系我</view>
+          </view>
+          <text class="more iconfont icon-nomely-arrow-right"></text>
+        </view>
       </view>
     </view>
   </view>
