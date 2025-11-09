@@ -1,19 +1,18 @@
 # Nomely
 
 > 起名小程序
-<p>从诗经、楚辞、唐诗宋词、乐府诗集、古诗三百首、著名楚辞等古典文籍中起名字</p>
-<!-- <img src="./images/logo.png" align="right" alt="Nomely logo"> -->
+<p>从诗经、楚辞、唐诗宋词、乐府诗集、古诗三百首、著名楚辞等古典文籍中
 <p align='center'>
   <img src='./images/qrcode.jpg'>
 </p>
 
-## 数据来源
-数据来自 [gushi_namer](https://github.com/holynova/gushi_namer)。
+## 特别感谢
+数据源来自 [gushi_namer](https://github.com/holynova/gushi_namer)。
 
 ## 开发经历
 在孩子出生前很早起名字就排上了日程，当时起名字用到了各种AI，各种修改提示词，每天一有时间就点开AI，让AI吐N个名字出来，这种情况陆陆续续持续了好几个月，但始终还是没有满意的名字。后来还是回到了随机生成这条看天意的路上。看到 [gushi_namer](https://github.com/holynova/gushi_namer) 项目后，为了便于查看，我就做了一个丑陋不堪的 `mvp` 微信小程序（名语屋的原型），基于这个原型，我最终选中了6个名字（3男3女），然后和家里的领导一商量，最终敲定了1男1女两个名字。而其中的一个名字，正是我孩子的正式名字。
 
-从我确认了孩子的正式名字后，就想把这个原型整成正式的小程序，但是因为各种事情的耽搁，几个月后小程序才正式上线。作为一个没有审美的搬砖工人，`UI` 页面基本上全部由 `Gemini` 生成。具体的链接可查看(UI生成)[#UI生成]。
+从我确认了孩子的正式名字后，就想把这个原型整成正式的小程序，但是因为各种事情的耽搁，几个月后小程序才正式上线。作为一个没有审美的搬砖工人，`UI` 页面基本上全部由 `Gemini` 生成。具体的链接可查看[UI生成](#UI生成)。
 
 最后，希望每个兄弟姐妹叔叔阿姨都能给自己的孩子取到心怡的名字。
 
@@ -76,9 +75,6 @@
 
 ### 微信赞赏码
 <img src="./images/wxzsm.png" width="250" />
-
-## Contributors
-* fthux, [@fthux](https://github.com/fthux)
 
 ## License
 
