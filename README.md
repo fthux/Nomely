@@ -1,7 +1,7 @@
 # Nomely
 
-> 起名小程序
-<p>从诗经、楚辞、唐诗宋词、乐府诗集、古诗三百首、著名楚辞等古典文籍中
+> 一款开源的起名小程序——让天下没有难起的名字
+<p>从诗经、楚辞、唐诗宋词、乐府诗集、古诗三百首、著名楚辞等古典文籍中起名字。
 <p align='center'>
   <img src='./images/qrcode.jpg' height="200">
 </p>
@@ -10,23 +10,22 @@
 数据源来自 [gushi_namer](https://github.com/holynova/gushi_namer)。
 
 ## 开发经历
-在孩子出生前很早起名字就排上了日程，当时起名字用到了各种AI，各种修改提示词，每天一有时间就点开AI，让AI吐N个名字出来，这种情况陆陆续续持续了好几个月，但始终还是没有满意的名字。后来还是回到了随机生成这条看天意的路上。看到 [gushi_namer](https://github.com/holynova/gushi_namer) 项目后，为了便于查看，我就做了一个丑陋不堪的 `mvp` 微信小程序（名语屋的原型），基于这个原型，我最终选中了6个名字（3男3女），然后和家里的领导一商量，最终敲定了1男1女两个名字。而其中的一个名字，正是我孩子的正式名字。
+在孩子出生前很早起名字就排上了日程，当时起名字用到了各种 `AI`，各种修改提示词，每天一有时间就点开 `AI`，让 `AI` 吐N个名字出来，这种情况陆陆续续持续了好几个月，但始终还是没有满意的名字。后来还是回到了随机生成这条看天意的路上。看到 [gushi_namer](https://github.com/holynova/gushi_namer) 项目后，为了便于查看，我就做了一个丑陋不堪的 `mvp` 微信小程序（名语屋的原型），基于这个原型，我最终选中了6个名字（3男3女），然后和家里的领导一商量，经领导批准后，最终敲定了1男1女两个名字。而其中的一个名字，正是我孩子的正式名字。
 
-从我确认了孩子的正式名字后，就想把这个原型整成正式的小程序，但是因为各种事情的耽搁，几个月后小程序才正式上线。作为一个没有审美的搬砖工人，`UI` 页面基本上全部由 `Gemini` 生成。具体的链接可查看[UI生成](#UI生成)。
+从我确认了孩子的正式名字后，就想把这个原型整成正式的小程序，但是因为各种事情的耽搁，几个月后小程序才正式上线。作为一个没有审美的搬砖工人，`UI` 页面基本上全部由 `Google Gemini` 生成。具体的链接可查看[UI生成部分](#UI生成)。
 
-最后，希望每个兄弟姐妹叔叔阿姨都能给自己的孩子取到心怡的名字。
+最后，希望各位兄弟姐妹叔叔阿姨都能给自己的孩子取到心怡的名字。
 
 ## 仓库地址
 > * github 仓库地址 [https://github.com/fthux/nomely](https://github.com/fthux/nomely)。
 > * gitee 仓库地址 [https://gitee.com/fthux/nomely](https://gitee.com/fthux/nomely)。
 
 ## UI生成
-`UI` 页面基本上全部由 `Gemini` 生成，小程序版本做了一些小的UI调整和适配，完整的 `Gemini APP` 实现可访问 [Google AI Studio](https://ai.studio/apps/drive/1P7XoluwC5s7CL1xeVv8NeXWjTQ_OwvHf)。贴几张 `Gemini` 生成的 `UI` 和小程序实现的 `UI`：
+`UI` 页面基本上全部由 `Google Gemini` 生成，小程序版本我做了一些小的 `UI` 调整和适配，完整的 `Gemini APP` 实现可访问 [Google AI Studio](https://ai.studio/apps/drive/1P7XoluwC5s7CL1xeVv8NeXWjTQ_OwvHf)。贴几张 `Gemini` 生成的 `UI` 和小程序实现的 `UI`：
 
 ### `Gemini` 实现
 <details>
-<summary>展开查看 `Gemini` 实现</summary>
-<pre>
+<summary>展开查看 Gemini 实现</summary>
 <div>
 <img src='./images/screenshot1.png' style='width:250px;'>
 <img src='./images/screenshot2.png' style='width:250px;'>
@@ -34,13 +33,11 @@
 <img src='./images/screenshot4.png' style='width:250px;'>
 <img src='./images/screenshot5.png' style='width:250px;'>
 </div>
-</pre>
 </details>
 
 ### 小程序实现
 <details>
 <summary>展开查看小程序实现</summary>
-<pre>
 <div>
 <img src='./images/screenshot6.jpg' style='width:250px;'>
 <img src='./images/screenshot7.jpg' style='width:250px;'>
@@ -48,16 +45,21 @@
 <img src='./images/screenshot9.jpg' style='width:250px;'>
 <img src='./images/screenshot10.jpg' style='width:250px;'>
 </div>
-</pre>
 </details>
 
 ## 名字的意义
+
+> 注：该部分文案由AI生成
 
 * 一名之立，旬月踟蹰”。名字，是父母赠予孩子的第一份厚礼。我们深知其重，故潜心于诗、骚、词、赋的浩瀚文海，为您精心撷取文采斐然、寓意深远的灵感，愿每个名字都承载着经典与祝福。
 * 为避常用名之普遍，并追求音律与字形之美，我们专选双字为名。与您的姓氏结合，构成和谐的三字姓名，既独特不易重复，又蕴含悠长的文化意境。
 
 ## Q&A
 
+> 注：该部分文案由AI生成
+
+<details>
+<summary>展开查看 Q&A</summary>
 * Question
 为什么不直接用 AI 生成名字，而是让我自己挑选？
 * Answer
@@ -82,6 +84,7 @@
 可以指定生成男孩或女孩的名字吗？
 * Answer
 我们特意未加入严格的性别筛选功能，原因在于中国古典文学中的许多优美词汇本身是中性的，其意境的“刚”与“柔”往往取决于搭配和个人的解读。例如，“清川”既可形容男子的俊朗，亦可描绘女子的澄澈。我们鼓励您超越固有的性别标签，用心感受每个名字背后的音韵与意象，为您未来的“他”或“她”选择一个最能触动您心弦的佳名。真正的专属，往往诞生于这份不设限的探索之中。
+</details>
 
 ## Buy me a coffee
 ### 爱发电
