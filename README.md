@@ -21,14 +21,24 @@
 > * gitee 仓库地址 [https://gitee.com/fthux/nomely](https://gitee.com/fthux/nomely)。
 
 ## UI生成
-`UI` 页面基本上全部由 `Gemini` 生成，完整的 `APP` 链接可访问 [aistudio](https://ai.studio/apps/drive/1P7XoluwC5s7CL1xeVv8NeXWjTQ_OwvHf)。贴几张 `Gemini` 生成的 `UI`：
+`UI` 页面基本上全部由 `Gemini` 生成，完整的 `APP` 链接可访问 [aistudio](https://ai.studio/apps/drive/1P7XoluwC5s7CL1xeVv8NeXWjTQ_OwvHf)。贴几张 `Gemini` 生成的 `UI` 和小程序实现的 `UI`：
 
+### Gemini
 <div>
 <img src='./images/screenshot1.png' style='width:250px;'>
 <img src='./images/screenshot2.png' style='width:250px;'>
 <img src='./images/screenshot3.png' style='width:250px;'>
 <img src='./images/screenshot4.png' style='width:250px;'>
 <img src='./images/screenshot5.png' style='width:250px;'>
+</div>
+
+### 小程序
+<div>
+<img src='./images/screenshot6.png' style='width:250px;'>
+<img src='./images/screenshot7.png' style='width:250px;'>
+<img src='./images/screenshot8.png' style='width:250px;'>
+<img src='./images/screenshot9.png' style='width:250px;'>
+<img src='./images/screenshot10.png' style='width:250px;'>
 </div>
 
 ## 名字的意义
