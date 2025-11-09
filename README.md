@@ -3,10 +3,10 @@
 > 起名小程序
 <p>从诗经、楚辞、唐诗宋词、乐府诗集、古诗三百首、著名楚辞等古典文籍中
 <p align='center'>
-  <img src='./images/qrcode.jpg'>
+  <img src='./images/qrcode.jpg' height="200">
 </p>
 
-## 特别感谢
+## 特别鸣谢
 数据源来自 [gushi_namer](https://github.com/holynova/gushi_namer)。
 
 ## 开发经历
@@ -21,7 +21,7 @@
 > * gitee 仓库地址 [https://gitee.com/fthux/nomely](https://gitee.com/fthux/nomely)。
 
 ## UI生成
-`UI` 页面基本上全部由 `Gemini` 生成，完整的 `APP` 链接可访问 [aistudio](https://ai.studio/apps/drive/1P7XoluwC5s7CL1xeVv8NeXWjTQ_OwvHf)。贴几张 `Gemini` 生成的 `UI` 和小程序实现的 `UI`：
+`UI` 页面基本上全部由 `Gemini` 生成，小程序版本做了一些小的UI调整和适配，完整的 `Gemini APP` 实现可访问 [Google AI Studio](https://ai.studio/apps/drive/1P7XoluwC5s7CL1xeVv8NeXWjTQ_OwvHf)。贴几张 `Gemini` 生成的 `UI` 和小程序实现的 `UI`：
 
 ### `Gemini` 实现
 <div>
