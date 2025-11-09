@@ -6,7 +6,7 @@
   <img src='./images/qrcode.jpg' height="200">
 </p>
 
-## 特别鸣谢
+## 特别感谢
 数据源来自 [gushi_namer](https://github.com/holynova/gushi_namer)。
 
 ## 开发经历
@@ -24,6 +24,9 @@
 `UI` 页面基本上全部由 `Gemini` 生成，小程序版本做了一些小的UI调整和适配，完整的 `Gemini APP` 实现可访问 [Google AI Studio](https://ai.studio/apps/drive/1P7XoluwC5s7CL1xeVv8NeXWjTQ_OwvHf)。贴几张 `Gemini` 生成的 `UI` 和小程序实现的 `UI`：
 
 ### `Gemini` 实现
+<details>
+<summary>展开查看 `Gemini` 实现</summary>
+<pre>
 <div>
 <img src='./images/screenshot1.png' style='width:250px;'>
 <img src='./images/screenshot2.png' style='width:250px;'>
@@ -31,8 +34,13 @@
 <img src='./images/screenshot4.png' style='width:250px;'>
 <img src='./images/screenshot5.png' style='width:250px;'>
 </div>
+</pre>
+</details>
 
 ### 小程序实现
+<details>
+<summary>展开查看小程序实现</summary>
+<pre>
 <div>
 <img src='./images/screenshot6.jpg' style='width:250px;'>
 <img src='./images/screenshot7.jpg' style='width:250px;'>
@@ -40,6 +48,8 @@
 <img src='./images/screenshot9.jpg' style='width:250px;'>
 <img src='./images/screenshot10.jpg' style='width:250px;'>
 </div>
+</pre>
+</details>
 
 ## 名字的意义
 
